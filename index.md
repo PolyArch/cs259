@@ -9,7 +9,7 @@ I am an assistant professor of Computer Science at the University of
 California, Los Angeles.  I design, build and analyze computer architectures.
 Broadly, my research is about breaking and reforming traditional abstractions
 across applications, programming languages, compilers, the hardware/software
-interface, and microarchitectures, with the goal of enable high productivity 
+interface, and microarchitectures, with the goal of enabling high productivity 
 and performance in an increasingly parallel and heterogeneous computing landscape. 
 See my [research]({{site.baseurl}}/01-research/) page for more details.
 
