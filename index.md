@@ -13,6 +13,15 @@ interface, and microarchitectures, with the goal of enabling high productivity
 and performance in an increasingly parallel and heterogeneous computing landscape. 
 See my [research]({{site.baseurl}}/01-research/) page for more details.
 
+### News
+
+My paper "Stream-Dataflow Acceleration" was accepted for publication at ISCA
+2017.  See you there!
+
+My Top-Picks Paper "Domain Specialization is Generally Unnecessary for Accelerators" will be published in the May/June 2017 issue of IEEE Micro.
+
+I coauthored a paper on enabling open-source hardware, which will appear in the June 2017 issue of IEEE computer.
+
 ### Recruiting
 
 **I am actively recruiting new Ph.D. students.**  I am looking for highly

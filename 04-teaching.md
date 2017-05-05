@@ -17,8 +17,11 @@ interrupts, and traps. Assemblers, linkers, and loaders. Operating systems
 concepts: processes and process management, input/output (I/O) programming,
 memory management, file systems.
 
-* Spring 2017: 259. Current Topics in Computer Science: System
-Design/Architecture  (details to come)
-
+* Spring 2017: 259. Heterogeneity and the Specialization Spectrum:
+This class explores the benefits and drawbacks of
+specialization, as well as the challenges in architecture design, compilation
+and programming models.  Topics: heterogeneous multicores, instruction set
+specialization, programmable vector and dataflow co-processors, memories,
+domain-specific architectures and supporting dynamic compilers/runtimes. 
 
 
