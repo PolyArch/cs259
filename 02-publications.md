@@ -5,11 +5,28 @@ title: Publications
 ### Conference and Workshop Publications
 
 <p class="publication">
+<b>T. Nowatzki</b>, V. Gangadhar, K. Sankaralingam  <br />
+<a href="{{ site.baseurl }}/papers/isca2017-stream-dataflow.pdf">
+  <cite><u>Stream-Dataflow Acceleration</u></cite></a>. ISCA 2017. 
+</p>
+
+<p class="publication">
+<b>T. Nowatzki</b>, V. Gangadhar, K. Sankaralingam, G. Wright  <br />
+<a href=https://doi.org/10.1109/MM.2017.60>
+  <cite><u>Domain Specialization is Generally Unnecessary for Accelerators</u></cite></a>. IEEE Micro Top Picks in Computer Architecture 2017. 
+</p>
+
+<p class="publication">
+G. Gupta, <b>T. Nowatzki</b>, V. Gangadhar, and K. Sankaralingam,
+<a href=https://doi.org/10.1109/MC.2017.162>
+  <cite><u>Kickstarting Semiconductor Innovation with Open Source Hardware</u></cite></a>. IEEE Computer 2017
+</p>
+
+<p class="publication">
 <b>T. Nowatzki</b>, V. Gangadhar, K. Sankaralingam, G. Wright  <br />
 <a href="http://research.cs.wisc.edu/vertical/papers/2016/hpca16-lssd.pdf">
   <cite><u>Pushing the Limits of Accelerator Efficiency While Retaining Programmability</u></cite></a>.
-HPCA 2016.  <b> [Selected for IEEE Micro Top Picks 2017] </b>
-
+HPCA 2016. 
 </p>
 
 <p class="publication">

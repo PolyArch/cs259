@@ -15,12 +15,20 @@ See my [research]({{site.baseurl}}/01-research/) page for more details.
 
 ### News
 
+Thanks to those who came to my Keynote at the first annual graph processing
+workshop at ISCA 2017.  Please send me an email if anything I discussed is
+of interest!
+
+I coauthored a paper on enabling open-source hardware, which will appear in
+the June 2017 issue of IEEE computer.
+
 My paper "Stream-Dataflow Acceleration" was accepted for publication at ISCA
-2017.  See you there!
+2017.  It was great to see everyone.
 
-My Top-Picks Paper "Domain Specialization is Generally Unnecessary for Accelerators" will be published in the May/June 2017 issue of IEEE Micro.
+My Top-Picks Paper "Domain Specialization is Generally Unnecessary for
+Accelerators" will be published in the May/June 2017 issue of IEEE Micro.  (Learn the 5 C's of specialization!)
 
-I coauthored a paper on enabling open-source hardware, which will appear in the June 2017 issue of IEEE computer.
+
 
 ### Recruiting
 

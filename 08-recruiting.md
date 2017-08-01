@@ -6,7 +6,7 @@ title: Recruiting
 I am actively recruiting highly motivated students who are ready to take on
 ambitious challenges.  If you are interested in computer architecture
 research at UCLA, please feel free to send me a short email with your 
-research interests.  
+research interests and background.   
 
 I am broadly interested in architecture, microarchitecture, compilers and
 programming languages to support demanding applications on next generation
