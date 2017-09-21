@@ -11,14 +11,15 @@ permalink:        pretty
 title:            'Tony Nowatzki'
 tagline:          'Assistant Professor of Computer Science at UCLA <br/> Boelter 3731G'
 description:      ''
-url:              http://cs.ucla.ecu/~tjn
-baseurl:          http://web.cs.ucla.edu/~tjn/
+#url:              http://cs.ucla.ecu/~tjn
+#baseurl:          http://web.cs.ucla.edu/~tjn/
 
-paginate:         1
+paginate:         10
 paginate_path:    /blog/page:num
 
 # Custom vars
 version:          0.1
 
-# Gems
-gems: [jekyll-paginate]
+gems: [jekyll/scholar, jekyll-gist, jekyll-paginate]
+
+

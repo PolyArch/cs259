@@ -22,10 +22,13 @@ My research requires a variety of different skills and expertise, including:
 
 * Strong general coding skills (C, C++, Python, ...)
 * Hardware Simulators and Modeling 
-* Hardware design and prototyping (Verilog, Synthesis, FPGA experience...)
 * Compiler Implementation (LLVM, clang, GCC...)
 * Application Development (databases, machine learning, computer vision...)
+* Hardware design and prototyping (Verilog, Synthesis, FPGA experience...)
 
 If you have some of the above skills and are passionate about architecture
-research, please feel free to reach out.  If you are on campus, please feel
- free to stop by and say hello! 
+research, please feel free to reach out.  
+
+If you are on campus, please feel free to stop by and say hello! (I recommend
+emailing me first, especially if you want me to be paged-in for a conversation. : )
+

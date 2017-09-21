@@ -33,10 +33,16 @@
           {% endif %}
         {% endif %}
       {% endfor %}
+
     </ul>
 
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item{% if page.title == "Blog" %} active{% endif %}">
+      <a href="{{ site.baseurl }}/blog">Blog</a>
+      </li>
+
   <a href="https://www.linkedin.com/pub/tony-nowatzki/28/757/659" class="flink">Linked In</a> --    
-  <a href="/~tjn/cv.pdf" class="flink">Current CV</a> -- 
+  <a href="/~tjn/cv.pdf" class="flink">CV</a> -- 
   <a href="http://dblp.uni-trier.de/pers/hd/n/Nowatzki:Tony" class="flink">DBLP</a>
 
    
