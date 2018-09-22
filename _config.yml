@@ -1,15 +1,15 @@
 # Dependencies
 markdown:         redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "footnotes"]
 highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            'Tony Nowatzki'
-tagline:          'Assistant Professor of Computer Science at UCLA <br/> Boelter 3731G'
+title:            'CS251a'
+tagline:          'Advanaced Computer Architecture'
 description:      ''
 #url:              http://cs.ucla.ecu/~tjn
 #baseurl:          http://web.cs.ucla.edu/~tjn/
@@ -20,6 +20,12 @@ paginate_path:    /blog/page:num
 # Custom vars
 version:          0.1
 
-gems: [jekyll/scholar, jekyll-gist, jekyll-paginate]
+plugins: [jekyll/scholar, jekyll-gist, jekyll-paginate]
+
+
+#plugins: 
+#  - jekyll/scholar
+#  - jekyll-gist
+#  - jekyll-paginate
 
 
