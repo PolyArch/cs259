@@ -5,8 +5,6 @@ title: Schedule
 
 This schedule is subject to change.  The arrow indicate the speculative head of the schedule reorder buffer (please do not complete reviews on/after the head).
 
-### Schedule
-
 | Date      | Topic                                  | Readings                                                                      | Review                                                                                                     | Commit |
 |-----------|----------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------|
 | Sept 27th | Intro                                  |                                                                               |                                                                                                            |        |
