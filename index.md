@@ -8,7 +8,7 @@ title: Overview
 * Fall 2018
 * Instructor: Tony Nowatzki  [(cs-page)](http://web.cs.ucla.edu/~tjn)
 * Email: tjn@cs.ucla.edu (include [cs251a] in subject line)
-* Office hours:
+* Office hours: 9:00am-10:00am Wednessday, 2:00pm-3:00pm Friday
 * TA: Vidushi Dadu
 * TA Office Hours: Fri 10:30am-12:30pm
 
@@ -24,17 +24,26 @@ tradeoffs of architecture and hardware design for general purpose computers.
 For example, we will learn how applications exhibit different forms of
 instruction-level parallelism, and how these are exploited with concurrent
 execution, even though the OS remains completely oblivious.  We will study
-evolution of ISAs, how VLSI technology has influenced processor design, and the
-importance of locality in developing efficient memory systems.
+evolution of ISAs, how VLSI technology has influenced processor design, how
+modern out-of-order pipelines work, and how locality is exploited
+in to create efficient memory systems.
 
 This course will also emphasize evaluation methods, including simulation and
-anaytical modeling, and will teach the use through homeworks and projects with
-gem5.
+anaytical modeling, and will teach the use through homeworks with gem5. The final will also typically involve gem5.
 
 ### Prerequisites
 
-It is recommended that you have taken the equivalent of cs151b.
+It is recommended that you have taken the equivalent of UCLA's CS151b.  Expected
+background includes basic knowledge of ISAs and architecture principles,
+hardware pipelines, and operating systems.  Ie. if push comes to shove, it is expected that you could design a simple low-performance processor.  
 
+All of that said, we will spend time going in depth on background/review during
+the first two-or-so weeks to build a foundation for more advanced architetcure
+concepts.
 
+### News
+
+* <span style="color:blue">This is a preliminary Website: Don't believe anything until class begins. : ) </span>
+* Office hours on Wed. Oct. 10th/17th are from 10:00am to 11:00am instead.
 
 [//]: # (this is a random comment  .... [recruiting page]({{site.baseurl}}/08-recruiting/)  )
