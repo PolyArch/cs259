@@ -3,13 +3,15 @@ layout: page
 title: Schedule
 ---
 
+This schedule is subject to change.  The arrow indicate the speculative head of the schedule reorder buffer (please do not complete reviews on/after the head).
+
 ### Schedule
 
 | Date      | Topic                                  | Readings                                                                      | Review                                                                                                     | Commit |
 |-----------|----------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------|
 | Sept 27th | Intro                                  |                                                                               |                                                                                                            |        |
-| Oct 2nd   | ISA Basics                             | [Synth Lec: Processor Microarchitecture][synth-proc-micro]                    | Power Struggles: Revisiting the RISC vs. CISC Debate on Contemporary ARM and x86 Architectures, HPCA 2013  | &larr  |
-| Oct 4th   | Pipelining                             |                                                                               | [Cramming More Components Onto Integrated Circuits][moore65]                                               |        |
+| Oct 2nd   | ISA Basics                             | [Synth Lec: Processor Microarchitecture][synth-proc-micro]                    | Power Struggles: Revisiting the RISC vs. CISC Debate on Contemporary ARM and x86 Architectures, HPCA 2013  | &leftarrow  |
+| Oct 4th   | Pipelining                             |                                                                               | [Cramming More Components Onto Integrated Circuits][moore65]                                               | $\leftarrow$       |
 | Oct 9th   | Multi-Issue                            |                                                                               | Instruction Issue Logic for High-Performance, Interruptible, Multiple Functional Unit, Pipelined Computers |        |
 | Oct 11th  | OOO Basics                             |                                                                               |                                                                                                            |        |
 | Oct 16th  | Modern OOO                             |                                                                               |                                                                                                            |        |
