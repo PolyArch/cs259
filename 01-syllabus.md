@@ -19,14 +19,22 @@ Several important specific goals are:
 * Gain appreciation for state-of-the-art microprocessors.
 * Learn about evaluation methods, including simulation, analytical modeling, and mechanistic models.  Specific focus on [gem5](http://learning.gem5.org/).
 
-### Evaluation:
+### Course Components:
 
-* 5%  Participation
+Logistically, this course has 4 components.  
+* Reviews: During this course we will read a number of research papers from literature, including classic and modern works.  You will write a short review, to be submtited over CCLE, for one or two papers each week. See [review]({{site.baseurl}}/06-reviews/) page for more instructions.
+* Homeworks:  There will be a 3-4 homeworks during the quarter, in which you will apply your knowledge to real-world architecture evaluation.  These homeworks will mostly revolve around gem5.  See [homeworks]({{site.baseurl}}/07-homeworks/) page for more instructions.
+* Exames:  There will be two midterm exams during the quarter.  
+
+* Exams: 
+
+## Grade Breakdown
+* 10% Participation
 * 15% Reviews
 * 15% Homeworks
 * 30% Exams
-	* 15% 1/3 Term
-	* 15% 2/3 Term
+    - 15% 1/3 Term
+    - 15% 2/3 Term
 * 30% Project
 
 ### Required Texts
