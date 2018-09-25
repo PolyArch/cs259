@@ -3,18 +3,19 @@ layout: default
 title: Overview
 ---
 
-### CS251a: Advanaced Computer Architecture
+# CS251a: Advanaced Computer Architecture
 
 ### About / Contact
 
 * Fall 2018
 * Instructor: Tony Nowatzki  [(cs-page)](http://web.cs.ucla.edu/~tjn)
 * Email: tjn@cs.ucla.edu (include [cs251a] in subject line)
-* Office hours: 9:00am-10:00am Wednesday, 2:00pm-3:00pm Friday
+* Office hours: 9:00am-10:00am Wednesday, 2:00pm-3:00pm Friday  (Room 484, E6)
 * TA: Vidushi Dadu
-* TA Office Hours: Fri 10:30am-12:30pm
+* TA Office Hours: Fri 10:30am-12:30pm  (Room ???)
 
 * <span style="color:blue">This is a preliminary Website: Don't believe anything until class begins. : ) </span>
+* <span style="color:red"> If you'd like to addend this class, please come to the first day.  Its *very* likely due to drops that we will have space. </span>
 
 
 ### Description
