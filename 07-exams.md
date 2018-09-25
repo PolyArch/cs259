@@ -24,7 +24,9 @@ not consult with others about the questions -- it is intended to be an individua
 test.  This is an experiment on trust; please follow the rules so that I can
 continue to have take-home tests in the future.
 
-### Practice Exams Since this is the first time we are doing this form of test
+### Practice Exams 
+
+Since this is the first time we are doing this form of test
 in this course, there are no sample exams to give you from previous years.
 However, I will likely follow a style similar to the [UW architecture
 qual](http://www.cs.wisc.edu/academics/graduate-programs/guidebook/arch-qual).

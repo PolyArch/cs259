@@ -22,11 +22,22 @@ Several important specific goals are:
 ### Course Components:
 
 Logistically, this course has 4 components.  
-* Reviews: During this course we will read a number of research papers from literature, including classic and modern works.  You will write a short review, to be submtited over CCLE, for one or two papers each week. See [review]({{site.baseurl}}/06-reviews/) page for more instructions.
-* Homeworks:  There will be a 3-4 homeworks during the quarter, in which you will apply your knowledge to real-world architecture evaluation.  These homeworks will mostly revolve around gem5.  See [homeworks]({{site.baseurl}}/07-homeworks/) page for more instructions.
-* Exames:  There will be two midterm exams during the quarter.  
-
-* Exams: 
+* Reviews: During this course we will read a number of research papers from
+  literature, including classic and modern works.  You will write a short
+review, to be submtited over CCLE, for one or two papers each week. See
+[review]({{site.baseurl}}/04-reviews/) page for more instructions.
+* Homeworks:  There will be a 3-4 homeworks during the quarter, in which you
+  will apply your knowledge to real-world architecture evaluation.  These
+homeworks will mostly revolve around gem5.  
+See [homeworks]({{site.baseurl}}/05-homeworks/) page for eventual handouts.
+* Exams:  There will be two take-home midterm exams during the quarter,
+  covering the first third and second third of the course material.  There will
+be no final exam.  
+See [exams]({{site.baseurl}}/07-exams/) page for more details.
+* Project:  In lieu of a final, the course will have a final project.  It will
+either involve hacking the gem5 simulator or it can be open ended project of
+your choosing.
+See [project]({{site.baseurl}}/08-project/) page for more details.
 
 ## Grade Breakdown
 * 10% Participation
