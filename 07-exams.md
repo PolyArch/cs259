@@ -7,7 +7,7 @@ Exams will be take-home, and you'll be given 24 hours to answer 3-5 questions.
 You may use any resources available to you, asides from looking at answers to
 similar questions or consulting with anyone else about the answers.  Questions
 are not intended to require very long answers, however, and the entire exam
-should be takable within 1-3 hours, depending on your writing speed.  It could
+should be take-able within 1-3 hours, depending on your writing speed.  It could
 take much longer and be more stressful, of course, if you need to do re-read
 papers to answer the questions.  These questions will be primarily short-essay
 questions, focusing on concept synthesis and relationships.  
@@ -30,7 +30,7 @@ Since this is the first time we are doing this form of test
 in this course, there are no sample exams to give you from previous years.
 However, I will likely follow a style similar to the [UW architecture
 qual](http://www.cs.wisc.edu/academics/graduate-programs/guidebook/arch-qual).
-There are a number of questions there that are execellent, but some
+There are a number of questions there that are excellent, but some
 of them are of-course out-of-scope, feel free to ask if it is not clear.
 
 

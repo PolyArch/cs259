@@ -71,18 +71,18 @@ statement of work which describes how each student contributed to the project*.
 As you may have noticed, papers typically follow one of a few canonical
 structures. The one below is a reasonable approach.
 
-* Abstract: Summarize the main contribution(s), and list any key ndings.
+* Abstract: Summarize the main contribution(s), and list any key findings.
 * Introduction: Describe the problem your work addresses, why it is important, and overview the
 solution (if you are proposing one).
 * Related Work: Overview the relationship of your work to prior work, with citations. It's of course
 okay if the work is not 100% novel.
 * Methods: Detail the proposed design or methods (this may span one or more sections). This includes
 the design of any algorithms, hardware structures, interface strategies, codesign techniques, etc. Be
-sure to use drawings/gures/code-examples that can help explain the ideas.
+sure to use drawings/figures/code-examples that can help explain the ideas.
 * Methodology: Describe your approach for how you evaluated the work, and explain why it is fair or
 valid.
 * Evaluation: Provide and analyze any quantitative results.
-* Conclusions: Summarize the ndings and main contributions, as well as any ideas for future work.
+* Conclusions: Summarize the findings and main contributions, as well as any ideas for future work.
 * Statement of Work: For each person in the group, describe the tasks that they performed.
 * References: List all references cited.
 
