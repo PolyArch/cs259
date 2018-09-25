@@ -3,7 +3,9 @@ layout: default
 title: Overview
 ---
 
-### About
+### CS251a: Advanaced Computer Architecture
+
+### About / Contact
 
 * Fall 2018
 * Instructor: Tony Nowatzki  [(cs-page)](http://web.cs.ucla.edu/~tjn)

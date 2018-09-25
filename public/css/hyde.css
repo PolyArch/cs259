@@ -71,6 +71,13 @@ html {
   }
 }
 
+@media (max-width: 48rem) {
+  /* About section */
+  .sidebar-img {
+    display: none;
+  }
+}
+
 /* Sidebar links */
 .sidebar a {
   color: #fff;

@@ -20,6 +20,8 @@ paginate_path:    /blog/page:num
 # Custom vars
 version:          0.1
 
+exclude: ['*.bak']
+
 plugins_dir: [jekyll/scholar, jekyll-gist, jekyll-paginate, github-pages]
 
 
