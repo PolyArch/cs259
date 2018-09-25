@@ -10,7 +10,7 @@ title: Overview
 * Email: tjn@cs.ucla.edu (include [cs251a] in subject line)
 * Office hours:
 * TA: Vidushi Dadu
-* TA Office Hours: Fri 10:30am-12:30pm
+* TA Office Hours: Fri 10:30am-12:30pm, Boelter 3256S-A
 
 ### Description
 
