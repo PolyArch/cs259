@@ -5,11 +5,17 @@ title: Syllabus
 
 ### Advanced Computer Architecture (CS251a)
 * Instructor: Tony Nowatzki
-* Term Fall 2018
+* Term: Fall 2018
+* Textbook: Synthesis Lectures (available online, see below)
 
 ### Course Objectives
 
-Computer architecture is the glue that binds the worlds of hardware and software. Developing new archtiectures is the art and science of understanding the intrinsic properties of applications, developing and interconnecting hardware components to meet cost and performance goals, and creating abstractions that enable efficient use of hardware without sacrificing generality. 
+Computer architecture is the glue that binds the worlds of hardware and
+software. Developing new architectures is the art and science of understanding
+the intrinsic properties of applications, developing and interconnecting
+hardware components to meet cost and performance goals, and creating
+abstractions that enable efficient use of hardware without sacrificing
+generality. 
 
 Several important specific goals are:
 
@@ -19,21 +25,40 @@ Several important specific goals are:
 * Gain appreciation for state-of-the-art microprocessors.
 * Learn about evaluation methods, including simulation, analytical modeling, and mechanistic models.  Specific focus on [gem5](http://learning.gem5.org/).
 
-### Evaluation:
+### Course Components:
 
-* 5%  Participation
+Logistically, this course has 4 components.  
+* *Reviews:* During this course we will read a number of research papers from
+  literature, including classic and modern works.  You will write a short
+review, to be submitted over CCLE, for one or two papers each week. See
+[review]({{site.baseurl}}/04-reviews/) page for more instructions.
+* *Homeworks:*  There will be a 3-4 homeworks during the quarter, in which you
+  will apply your knowledge to real-world architecture evaluation.  These
+homeworks will mostly revolve around gem5.  
+See [homeworks]({{site.baseurl}}/05-homeworks/) page for eventual handouts.
+* *Exams:*  There will be two take-home midterm exams during the quarter,
+  covering the first third and second third of the course material.  There will
+be no final exam.  
+See [exams]({{site.baseurl}}/07-exams/) page for more details.
+* *Project:*  In lieu of a final, the course will have a final project.  It will
+either involve hacking the gem5 simulator or it can be open ended project of
+your choosing.
+See [project]({{site.baseurl}}/08-project/) page for more details.
+
+## Grade Breakdown
+* 5% Participation
 * 15% Reviews
 * 15% Homeworks
 * 30% Exams
-	* 15% 1/3 Term
-	* 15% 2/3 Term
-* 30% Project
+    - 15% 1/3 Term
+    - 15% 2/3 Term
+* 35% Project
 
 ### Required Texts
 
 There is no required textbook.  Required reading will include [Morgan Claypool
 Synthesis Lectures](https://www.morganclaypool.com/toc/cac/1/1) as well as a
-set of published papers (available on campus nextwork through
+set of published papers (available on campus network through
 [ACM](http://www.acm.org/dl) and [IEEE](http://www.ieee.org/ieeexplore)
 libraries).
 
