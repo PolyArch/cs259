@@ -48,6 +48,10 @@ perceptron) within gem5, and compare to the state-of-the-art TAGE predictor.
 microbenchmarks and figure out in what ways gem5 screws things up.  Bonus
 points if you submit a patch to gem5 upstream.  🌶️🌶️
 
+3. *gem5 spectre: *  Characterize the vulnerabilities of gem5 for spectre and meltdown 
+attacks.  🌶️ for reproducing [Jason's blog](http://www.lowepower.com/jason/visualizing-spectre-with-gem5.html), 
+up to 🌶️🌶️ 🌶️  for full characterization of spectre and meltdown variants.
+
 ### Architecture Ideas:
 
 1. *Tensor-Cores for CPUs:*  Propose a few extensions to x86 (or some
