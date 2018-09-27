@@ -3,7 +3,7 @@ layout: default
 title: Overview
 ---
 
-# CS251a: Advanaced Computer Architecture
+# CS251a: Advanced Computer Architecture
 
 ### About / Contact
 
@@ -15,7 +15,7 @@ title: Overview
 * TA Office Hours: Fri 10:30am-12:30pm (Room 3256S-A, Boelter)
 
 * <span style="color:blue">This is a preliminary Website: Don't believe anything until class begins. : ) </span>
-* <span style="color:red"> If you'd like to addend this class, please come to the first day.  Its *very* likely due to drops that we will have space. </span>
+* <span style="color:red"> If you'd like to attend this class, please come to the first day.  Its *very* likely due to drops that we will have space. </span>
 
 ### Description
 

@@ -12,7 +12,7 @@ take much longer and be more stressful, of course, if you need to do re-read
 papers to answer the questions.  These questions will be primarily short-essay
 questions, focusing on concept synthesis and relationships.  
 I will only test on subjects that are discussed in
-class, though the question may be regarding an aspect which we did not directly discuss.
+class or are in the required readings, though the question may be regarding an aspect which we did not directly discuss.
 
 My intention behind using take-home exams is to encourage deep reflection on
 concepts we learned about (rather than focusing on material-cramming) and also
