@@ -10,6 +10,7 @@ title: Overview
 * Fall 2018
 * Instructor: Tony Nowatzki  [(cs-page)](http://web.cs.ucla.edu/~tjn)
 * Email: tjn@cs.ucla.edu (include [cs251a] in subject line)
+* Course When/Where: 2:00pm-3:50pm, Geology 4660 
 * Office hours: 9:00am-10:00am Wednesday, 2:00pm-3:00pm Friday  (Room 484, E6)
 * TA: Vidushi Dadu
 * TA Office Hours: Fri 10:30am-12:30pm (Room 3256S-A, Boelter)
