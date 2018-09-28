@@ -8,3 +8,13 @@ AuthType Basic
      deny from all
      allow from .ucla.edu
      </Limit>
+AuthUserFile /dev/null
+AuthGroupFile /dev/null
+AuthName AllowUCLAEduOnly
+AuthType Basic
+
+     <Limit GET>
+     order deny,allow
+     deny from all
+     allow from .ucla.edu
+     </Limit>
