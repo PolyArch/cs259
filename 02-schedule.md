@@ -29,7 +29,7 @@ This schedule is subject to change.  The arrow indicate the speculative head of 
 | Dec 6th             | Challenges Ahead & Specialization            | [Understanding sources of inefficiency in general-purpose chips][gen-purp-innef]                                                                                                       |                                                                                                                                   |
 
 [lec1]: http://web.cs.ucla.edu/~tjn/ucla/01-intro.pdf
-[lec1]: http://web.cs.ucla.edu/~tjn/ucla/02-tech.pdf
+[lec2]: http://web.cs.ucla.edu/~tjn/ucla/02-tech.pdf
 [sohi-issue]: https://dl.acm.org/citation.cfm?id=78592
 [fnf]: https://dl.acm.org/citation.cfm?id=1194844
 [perceptron-bp]: https://www.cs.utexas.edu/~lin/papers/hpca01.pdf
