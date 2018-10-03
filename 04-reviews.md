@@ -21,6 +21,10 @@ sharing reviews before completing and submitting is prohibited.
 * [How to read and evaluate technical papers](http://www.cs.kent.edu/~jmaletic/howtoread.html)
 * [Task of the referee](http://jmlr.csail.mit.edu/reviewing-papers/smith-advice.pdf)
 
+## Example Reviews
+
+The below are some example acceptable reviews written by students in a similar class.  
+
 ### Example Review 1  ([Latency Lags Bandwidth](https://dl.acm.org/citation.cfm?id=1022596))
 The paper focuses on the consistent trend of imbalance in the improvement of latency to the improvement of bandwidth(b/w), across different technology areas. The author explained some plausible reasons behind the imbalance and described a few commonly used techniques used to cope with this. 
 
