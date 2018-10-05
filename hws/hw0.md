@@ -35,5 +35,5 @@ and abstraction
 errors](http://www.eecs.umich.edu/eecs/about/articles/2014/ispass_2014-1.pdf)
 -- no of course not!  An important mantra for the jaded architect:
 
-```All models are wrong, and some are useful'''
+> All models are wrong, and some are useful
 
