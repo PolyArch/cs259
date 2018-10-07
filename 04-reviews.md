@@ -5,13 +5,22 @@ title: Reviews
 
 Students are expected to have completed the assigned readings before class and
 actively participate in discussions.
+
+### Review Guidelines
  
 A review may be up to 600 words in length, and must contain the following sections:
 * a short paragraph summarizing the problem and goal/contributions of paper
 * a short paragraph summarizing the paper's methods and results
 * a short paragraph giving your opinion of what is good and bad about the paper.
 
-Grades will be be on the scale of Excellent(5), Satisfactory(4) and Unsatisfactory(2).  We may sample review grading to manage TA load (all students will be graded for the same paper reviews, but not all reviews will necessarily be graded).
+Grades will be be on the scale of Excellent(5), Satisfactory(4) and
+Unsatisfactory(2).  We may sample review grading to manage TA load (all
+students will be graded for the same paper reviews, but not all reviews will
+necessarily be graded).
+
+Due date/time: Reviews are due before class begins on CCLE.  You may turn them
+in up to a day late for -1 point.  (first review due date extended).  I will
+drop two lowest reviews when calculating grades.
 
 Discussion before class with other students or in groups is encouraged, but
 sharing reviews before completing and submitting is prohibited.
