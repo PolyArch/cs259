@@ -25,7 +25,7 @@ To get an account, follow these instructions:
 ```
 ssh account@tetracosa.cs.ucla.edu 
 account@tetracosa.cs.ucla.edu's password: 
-rain,rain,rain #give the previous line as password, then answer the following: 
+snow,snow,hail #give the previous line as password, then answer the following: 
 Personal name? (first last): Tess Testa 
 Username? (small letters or digits only): tt 
 Password? (12 or more characters): 
