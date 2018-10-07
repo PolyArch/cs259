@@ -15,7 +15,8 @@ Homeworks will be mainly based around gem5.
 
 gem5 is absolutely brutal to the compiler ... requiring >8 GB RAM to compile
 the x86 version.  I believe the main issue is code size coming from the
-instruction decoder (think thousand-item switch case).  If you don't have a
+instruction decoder (think thousand-item switch case).  If you have access to the SEAS
+machines (eg. ```lnxsrv01.seas.ucla.edu```), then these are a good choice.  If you don't have another
 fast machine with a large RAM that you like to use, then you are welcome to use
 my 24-core server ```tetracosa.cs.ucla.edu```.  This machine can only be accessed
 from campus (though you could ssh through ```lion.cs.ucla.edu``` for remote access).
