@@ -6,14 +6,20 @@ title: Homeworks
 Homeworks will be mainly based around gem5.  
 
 * [Homework 0]({{site.baseurl}}/hws/hw0) -- Learning Gem5 (not turned in)
-* Homework 1
+* [Homework 1]({{site.baseurl}}/hws/hw1) -- Gem5 Intro
 * Homework 2
 * Homework 3
 * Homework 4
 
-### Development Machine
+### Late Policy
 
-gem5 is absolutely brutal to the compiler ... requiring >8 GB RAM to compile
+You may submit up to 1 day late with a 20% penalty.
+
+### Development Machine / Environment
+
+I strongly suggest using Linux for gem5.  Limit your pain to a minimum if possible.
+
+Also, gem5 is absolutely brutal to the compiler ... requiring >8 GB RAM to compile
 the x86 version.  I believe the main issue is code size coming from the
 instruction decoder (think thousand-item switch case).  If you have access to the SEAS
 machines (eg. ```lnxsrv01.seas.ucla.edu```), then these are a good choice.  If you don't have another
