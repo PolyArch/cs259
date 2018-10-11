@@ -5,15 +5,11 @@ title: Homework 1
 
 ## Overview
 
-[preliminary -- TA is testing]
+Prerequisites: Please do Homework 0 first. (gem5 tutorials online)
 
-Due at TBD
-
-Prerequisites: Please do HW0 first.
-
-The goal of this homeworks are:
-1. Get familiar with the basics of gem5 usage
-2. Practice thinking across stack (application/ISA/microarchitecture)
+The goals of this homework are:
+1. Get familiar with the basics of gem5 usage and statistics
+2. Practice thinking/analysis across stack (application/ISA/microarchitecture)
 
 ## Step 1: Download/Compile the microbenchmarks
 
@@ -109,7 +105,8 @@ After collecting all of the data from the previous step, analyze the statistics,
 6. Which CPU model is more sensitive to changing the memory technology? Why?
 
 ### What to Hand In
-Please turn in to CCLE a zip file containing the config.ini and stats.txt for at least the described experiments in gem5.
+Please turn in to CCLE a zip file containing the config.ini 
+and stats.txt for at least the described experiments in gem5.
 
 Additionally, separate from the above archive, create a file named hw1.pdf
 that contains the data and answers to analysis questions.

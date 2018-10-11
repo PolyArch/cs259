@@ -7,7 +7,6 @@ title: Homeworks
 * [Homework 1]({{site.baseurl}}/hws/hw1) -- Gem5 Intro
 * Homework 2
 * Homework 3
-* Homework 4
 
 ### Late Policy
 
@@ -23,7 +22,7 @@ instruction decoder (think thousand-item switch case).
 
 *I originally suggested using the lnxsrv machines.  lnxsrv10 has
 all the packages we need, I think, but we currently don't have enough disk allocation
-to use it, so for now the option is below.*
+to use it, so for now the only other option is below.*
 
 If you don't have another
 fast machine with a large RAM that you like to use, then you are welcome to use
