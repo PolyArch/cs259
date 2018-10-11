@@ -3,8 +3,6 @@ layout: page
 title: Homeworks
 ---
 
-Homeworks will be mainly based around gem5.  
-
 * [Homework 0]({{site.baseurl}}/hws/hw0) -- Learning Gem5 (not turned in)
 * [Homework 1]({{site.baseurl}}/hws/hw1) -- Gem5 Intro
 * Homework 2
@@ -21,11 +19,17 @@ I strongly suggest using Linux for gem5.  Limit your pain to a minimum if possib
 
 Also, gem5 is absolutely brutal to the compiler ... requiring >8 GB RAM to compile
 the x86 version.  I believe the main issue is code size coming from the
-instruction decoder (think thousand-item switch case).  If you have access to the SEAS
-machines (eg. ```lnxsrv01.seas.ucla.edu```), then these are a good choice.  If you don't have another
+instruction decoder (think thousand-item switch case).   
+
+*I originally suggested using the lnxsrv machines.  lnxsrv10 has
+all the packages we need, I think, but we currently don't have enough disk allocation
+to use it, so for now the option is below.*
+
+If you don't have another
 fast machine with a large RAM that you like to use, then you are welcome to use
 my 24-core server ```tetracosa.cs.ucla.edu```.  This machine can only be accessed
 from campus (though you could ssh through ```lion.cs.ucla.edu``` for remote access).
+It now has scons and should work for compiling gem5.
 
 To get an account, follow these instructions:
 

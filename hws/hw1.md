@@ -44,12 +44,11 @@ generated from each run. Warning: by default, gem5 will write the output file
 to the same folder (m5out) every time. Make sure to move your output file
 before each subsequent run. 
 
-* There is one small issue with the compilation command in the Learning
-gem5 book: it will not compile the MinorCPU model by default.  Edit the
+* For some reason, gem5 is not configured to compile the MinorCPU model for X86 by default.  Edit the
 build_opts file for x86 (```gem5/build_opts/X86```) to add the "MinorCPU" to it.
 
 * Just so that you don't have to do a cross product of all combinations of simulator/compiler
-parameters, assume the default configuration is:
+parameters, you can assume the default configuration is:
     *  CPU: DerivO3CPU (the OOO core)
     *  compiler: gcc -O3 
     *  Frequency: 1Ghz
@@ -91,16 +90,18 @@ After collecting all of the data from the previous step, analyze the statistics,
 1. What metric (and mean) should you use to compare the performance between
    different system configurations? Why?
 
-2. For these three program properties: a) memory regularity, b) control regularity, and 
-   c) locality, name one statistic in gem5 that might help you categorize a workload.
+2. For these three program properties -- a) memory regularity, b) control regularity, and 
+   c) locality -- name one statistic (or combination of statistics)
+      from stats.txt that might help you categorize a workload as having that property.
       (eg. for control regularity, it is inversely proportional to the 
        number of branch instructions ... but you can think of a better one).
 
 3. For each microbenchmark, how would you describe/characterize its a) memory regularity, b)
    control regularity, c) locality?  
 
-4. For each microbenchmark, which microarchitecture parameter is it most sensitive to?  (in other words, 
-   what do you think the "bottleneck" is).
+4. For each microbenchmark, explain which microarchitecture parameter is it most sensitive to (in other words, 
+   what do you think the "bottleneck" is), and justify using reasoning or statistics.  
+   You might need to run other experiments, or look at the stats to help identify.
 
 5. Pick a microbenchmark; propose one application enhancement, ISA enhancement, and microarchitecture
    enhancement that you think would be very effective for that microbenchmark.
@@ -108,7 +109,7 @@ After collecting all of the data from the previous step, analyze the statistics,
 6. Which CPU model is more sensitive to changing the memory technology? Why?
 
 ### What to Hand In
-Please turn in to CCLE a zip file containing the config.ini and stats.txt from your runs in gem5.
+Please turn in to CCLE a zip file containing the config.ini and stats.txt for at least the described experiments in gem5.
 
 Additionally, separate from the above archive, create a file named hw1.pdf
 that contains the data and answers to analysis questions.

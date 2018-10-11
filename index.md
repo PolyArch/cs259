@@ -15,6 +15,8 @@ title: Overview
 * TA: Vidushi Dadu
 * TA Office Hours: Fri 10:30am-12:30pm (Room 3256S-A, Boelter)
 
+* Note: Office hours on Wed. Oct. 10th/17th are from 10:00am to 11:00am instead.
+
 ### Description
 
 Computer architecture is the glue that binds the worlds of hardware and
@@ -44,8 +46,5 @@ All of that said, we will spend time going in depth on background/review during
 the first two-or-so weeks to build a foundation for more advanced architecture
 concepts.
 
-### News
-
-* Office hours on Wed. Oct. 10th/17th are from 10:00am to 11:00am instead.
 
 [//]: # (this is a random comment  .... [recruiting page]({{site.baseurl}}/08-recruiting/)  )
