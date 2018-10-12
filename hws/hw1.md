@@ -7,6 +7,8 @@ title: Homework 1
 
 Prerequisites: Please do Homework 0 first. (gem5 tutorials online)
 
+Due: end of day Friday October 19th
+
 The goals of this homework are:
 1. Get familiar with the basics of gem5 usage and statistics
 2. Practice thinking/analysis across stack (application/ISA/microarchitecture)
