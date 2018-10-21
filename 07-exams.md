@@ -18,12 +18,6 @@ My intention behind using take-home exams is to encourage deep reflection on
 concepts we learned about (rather than focusing on material-cramming) and also
 to give you practice for making arguments and writing prose.
 
-### Academic Honesty
-It goes without saying that that even though this is a take-home exam, you may
-not consult with others about the questions -- it is intended to be an individual
-test.  This is an experiment on trust; please follow the rules so that I can
-continue to have take-home tests in the future.
-
 ### Practice Exams 
 
 Since this is the first time we are doing this form of test
@@ -38,6 +32,12 @@ on our test may be slightly more specific to the material that we have covered (
 questions don't ask about Tomasulu's algorithm or R10K approach, but I would ask about those).
 
 * [Link to google doc with relevant questions.](https://docs.google.com/document/d/1Eq8EWMB0YT3oqKN5AFgDJA3nyRFVoCejtL6TudfvI2M/edit?usp=sharing)
+
+### Academic Honesty
+It goes without saying that that even though this is a take-home exam, you may
+not consult with others about the questions -- it is intended to be an individual
+test.  This is an experiment on trust; please follow the rules so that I can
+continue to have take-home tests in the future.
 
 
 
