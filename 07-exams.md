@@ -34,9 +34,10 @@ There are a number of questions there that are excellent, but some
 of them are of-course out-of-scope, feel free to ask if it is not clear.
 
 I pulled a few from the above which are questions that I think would be relevant.  The ones
-on our test may be slightly more specific to the material that we have covered.
+on our test may be slightly more specific to the material that we have covered (eg. these
+questions don't ask about Tomasulu's algorithm or R10K approach, but I would ask about those).
 
-[link to google doc with relevant questions](https://docs.google.com/document/d/1Eq8EWMB0YT3oqKN5AFgDJA3nyRFVoCejtL6TudfvI2M/edit?usp=sharing)
+* [Link to google doc with relevant questions.](https://docs.google.com/document/d/1Eq8EWMB0YT3oqKN5AFgDJA3nyRFVoCejtL6TudfvI2M/edit?usp=sharing)
 
 
 
