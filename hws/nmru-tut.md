@@ -5,17 +5,9 @@ title: NMRU tutorial
 
 ## Overview
 
-In this chapter we will walk though how to create a simple SimObject. As an example, we are going to create a new cache replacement policy, specifically, NMRU, not most recently used. After this chapter you should be able to create new SimObjects, instantiate them in configuration files, and run simulations with your new objects.
+In this tutorial we will walk though how to create a simple SimObject. As an example, we are going to create a new cache replacement policy, specifically, NMRU, not most recently used. After this chapter you should be able to create new SimObjects, instantiate them in configuration files, and run simulations with your new objects.
 
-## Step 1: Create a new patch for your changes
-
-The first step when adding a new feature or modifying something in gem5, is to create a new patch to store your changes. Details on Mercurial patch queues can be found in the [Mercurial book](http://hgbook.red-bean.com/read/managing-change-with-mercurial-queues.html).
-
-```
-hg qnew nmru-patch -m "Mem: adds a new cache tag for NMRU replacement"
-```
-
-## Step 2: Create a Python class for your new SimObject
+## Step 1: Create a Python class for your new SimObject
 
 Each SimObject has a Python class which is associated with it. This Python class describes the parameters of your SimObject that can be controlled from the Python configuration files. For our NMRU cache tags, we are just going to inherit all of the parameters from the BaseSetAssoc tags. Thus, we simply need to declare a new class for our SimObject and set it’s name and the C++ header that will define the C++ class for the SimObject.
 
@@ -27,7 +19,7 @@ class NMRU(BaseSetAssoc):
     cxx_header = "mem/cache/tags/nmru.hh"
 ```
 
-## Step 3: Implement your SimObject in C++
+## Step 2: Implement your SimObject in C++
 
 Next, we need to create ```nmru.hh``` and ```nmru.cc``` which will implement our NMRU replacement policy. Importantly, every SimObject must inherit from the C++ SimObject class. Most of the time, your SimObject’s parent will be a subclass of SimObject, not SimObject itself.
 
@@ -63,7 +55,7 @@ typedef NMRUParams Params;
   BlkType* accessBlock(Addr addr, bool is_secure, Cycles &lat);
   BlkType* findVictim(Addr addr, const bool is_secure,
                          std::vector<CacheBlk*>& evict_blks) const;
-  void insertBlock(PacketPtr pkt, BlkType *blk)https://polyarch.github.io/cs251a/02-schedule/;
+  void insertBlock(PacketPtr pkt, BlkType *blk);
   void invalidate(BlkType *blk);
 };
 
@@ -120,7 +112,6 @@ NMRU::findVictim(Addr addr, const bool is_secure,
         assert(idx < assoc);
         assert(idx >= 0);
         blk = sets[extractSet(addr)].blks[idx];
-
         DPRINTF(CacheRepl, "set %x: selecting blk %x for replacement\n",
                 blk->set, regenerateBlkAddr(blk));
     }
@@ -154,7 +145,7 @@ NMRUParams::create()
 }
 ```
 
-## Step 4: Register the C++ file
+## Step 3: Register the C++ file
 
 Each SimObject must be registered with SCons so that its Params object and Python wrapper is created. Additionally, we also have to tell SCons which C++ files to compile. To do this, modify the SConscipt file in the directory that your SimObject is in. For each SimObject, add a call to SimObject and for each source file add a call to Source. In this example, you need to add the following to ```src/mem/cache/tags/SConscript```:
 
@@ -162,7 +153,7 @@ Each SimObject must be registered with SCons so that its Params object and Pytho
 Source('nmru.cc')
 ```
 
-## Step 5: Other things to make it work
+## Step 4: Other things to make it work
 
 Since your NMRU class extends from the BaseSetAssoc class, you need to make it's ```private``` members you want to access as ```protected```. Edit the visibility of ```extractSet``` function in ```src/mem/cache/tags/SConscript```.
 
@@ -175,4 +166,4 @@ for i in xrange(np):
         system.cpu[i].dcache.tags = NMRU()
 ```
 
-The changeset to add all of the NMRU code can be found here: [nmru-patch]({{site.baseurl}}/hws/nmru-patch). You can apply this patch by using hg qimport.
+The changeset to add all of the NMRU code can be found here: [nmru-patch]({{site.baseurl}}/hws/nmru-patch). You can apply this patch by using git am.
