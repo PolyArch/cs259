@@ -9,7 +9,7 @@ In this chapter we will walk though how to create a simple SimObject. As an exam
 
 ## Step 1: Create a new patch for your changes
 
-The first step when adding a new feature or modifying something in gem5, is to create a new patch to store your changes. Details on Mercurial patch queues can be found in the ([Mercurial book](http://hgbook.red-bean.com/read/managing-change-with-mercurial-queues.html)).
+The first step when adding a new feature or modifying something in gem5, is to create a new patch to store your changes. Details on Mercurial patch queues can be found in the [Mercurial book](http://hgbook.red-bean.com/read/managing-change-with-mercurial-queues.html).
 
 ```
 hg qnew nmru-patch -m "Mem: adds a new cache tag for NMRU replacement"
@@ -63,7 +63,7 @@ typedef NMRUParams Params;
   BlkType* accessBlock(Addr addr, bool is_secure, Cycles &lat);
   BlkType* findVictim(Addr addr, const bool is_secure,
                          std::vector<CacheBlk*>& evict_blks) const;
-  void insertBlock(PacketPtr pkt, BlkType *blk);
+  void insertBlock(PacketPtr pkt, BlkType *blk)https://polyarch.github.io/cs251a/02-schedule/;
   void invalidate(BlkType *blk);
 };
 
@@ -175,4 +175,4 @@ for i in xrange(np):
         system.cpu[i].dcache.tags = NMRU()
 ```
 
-The changeset to add all of the NMRU code can be found ([here]({{site.baseurl}}/hws/nmru-patch)). You can apply this patch by using hg qimport.
+The changeset to add all of the NMRU code can be found here: [nmru-patch]({{site.baseurl}}/hws/nmru-patch). You can apply this patch by using hg qimport.
