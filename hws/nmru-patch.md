@@ -1,3 +1,8 @@
+---
+layout: post
+title: NMRU patch
+---
+
 ``` diff
 diff --git a/build_opts/X86 b/build_opts/X86
 index 64d163c..36c573a 100644
