@@ -30,9 +30,11 @@ You can choose from three replacement policies for the L1D cache: Random, NMRU, 
 
 The constraints for these policies are summarized below.
 
- 	Random	NMRU	PLRU
-Max assoc.	16	8	8
-Lookup time	100 ps	500 ps	666 ps
+|           |Random| NMRU	| PLRU |
+|-----------|:----:|:----:|:-----:|
+|Max assoc. |16    |8	    |8     |
+|Lookup time|100 ps|500 ps|666 ps|
+
 Clearly describe in a one page memo to the CEO of Entil, all of the configurations you simulated, the results of your simulations, and your overall conclusion of how to architect the L1 data cache. Additionally, answer the following specific questions for each workload:
 
 Q1. Why does the 16-way set-associative cache perform better/worse/similar to the 8-way set-associative cache?
