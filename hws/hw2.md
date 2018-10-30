@@ -15,7 +15,7 @@ The goals of this homework are:
 
 ## Step 1: Implement NMRU replacement policy
 
-You can follow the tutorial here: ([nmru tutorial]({{site.baseurl}}/hws/hw2/nmru-tut)) Part 2 of the tutorial will walk you through how to create the NMRU policy.
+You can follow the tutorial here: ([nmru tutorial]({{site.baseurl}}/hws/nmru-tut)) Part 2 of the tutorial will walk you through how to create the NMRU policy.
 
 
 ## Step 2: Implement PLRU replacement policy
