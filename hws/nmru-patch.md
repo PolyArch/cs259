@@ -117,6 +117,7 @@ index 0000000..7f7bf22
 +
 +        DPRINTF(CacheRepl, "set %x: selecting blk %x for replacement\n",
 +                blk->set, regenerateBlkAddr(blk));
++		 evict_blks.push_back(blk);
 +    }
 +
 +    return blk;

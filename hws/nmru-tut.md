@@ -114,6 +114,8 @@ NMRU::findVictim(Addr addr, const bool is_secure,
         blk = sets[extractSet(addr)].blks[idx];
         DPRINTF(CacheRepl, "set %x: selecting blk %x for replacement\n",
                 blk->set, regenerateBlkAddr(blk));
+		evict_blks.push_back(blk);
+
     }
 
     return blk;
