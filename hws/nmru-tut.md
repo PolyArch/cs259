@@ -157,7 +157,7 @@ Source('nmru.cc')
 
 ## Step 4: Other things to make it work
 
-Since your NMRU class extends from the BaseSetAssoc class, you need to make it's ```private``` members you want to access as ```protected```. Edit the visibility of ```extractSet``` function in ```src/mem/cache/tags/SConscript```.
+Since your NMRU class extends from the BaseSetAssoc class, you need to make it's ```private``` members you want to access as ```protected```. Edit the visibility of ```extractSet``` function in ```src/mem/cache/tags/base_set_assoc.hh```.
 
 ## Step 5: Modify the config scripts to use your new SimObject
 
