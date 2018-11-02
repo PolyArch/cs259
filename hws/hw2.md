@@ -38,7 +38,9 @@ The constraints for these policies are summarized below.
 Clearly describe in a one page memo to the CEO of Entil, all of the configurations you simulated, the results of your simulations, and your overall conclusion of how to architect the L1 data cache. Additionally, answer the following specific questions for each workload:
 
 Q1. Why does the 16-way set-associative cache perform better/worse/similar to the 8-way set-associative cache?
+
 Q2. Why does Random/NMRU/PLRU/None perform better than the other replacement policies?
+
 Q3. Is the cache replacement/associativity important for this workload, or are you only getting benefits from clock cycle? Explain why the cache architecture is important/unimportant.
 
 ### What to Hand In
