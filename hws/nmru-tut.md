@@ -170,6 +170,7 @@ Also, we need to add moveToHead and moveToTail utility functions in set_associat
 In ```src/mem/cache/tags/indexing_policies/base.hh```
 
 ```
+#include "mem/cache/cache_blk.hh"
 /**
  * Move the given block to the head of the given set
  */
