@@ -17,6 +17,7 @@ We edit the file, ```Tags.py```, in ```src/mem/cache/tags/```
 class NMRU(BaseSetAssoc):
     type = 'NMRU'
     cxx_header = "mem/cache/tags/nmru.hh"
+    indexing_policy = SetAssociative
 ```
 
 ## Step 2: Implement your SimObject in C++
@@ -29,14 +30,25 @@ For nmru.hh, we can mostly copy the code from other similar replacement policies
 #ifndef __MEM_CACHE_TAGS_NMRU_HH__
 #define __MEM_CACHE_TAGS_NMRU_HH__
 
+#include "base/bitfield.hh"
+#include "base/intmath.hh"
+#include "base/logging.hh"
+#include "base/statistics.hh"
+#include "base/types.hh"
+#include "mem/cache/cache_blk.hh"
+
 #include "mem/cache/tags/base_set_assoc.hh"
 #include "params/NMRU.hh"
 
 class NMRU : public BaseSetAssoc
 {
-public:
-/** Convenience typedef. */
-typedef NMRUParams Params;
+  public:
+
+  /** Typedef the block type used in this class. */
+  typedef CacheBlk BlkType;
+
+  /** Convenience typedef. */
+  typedef NMRUParams Params;
 
   /**
    *      * Construct and initialize this tag store.
@@ -54,97 +66,14 @@ typedef NMRUParams Params;
    *           */
   BlkType* accessBlock(Addr addr, bool is_secure, Cycles &lat);
   BlkType* findVictim(Addr addr, const bool is_secure,
-                         std::vector<CacheBlk*>& evict_blks) const;
-  void insertBlock(PacketPtr pkt, BlkType *blk);
+                          std::vector<BlkType*>& evict_blks) const;
+  void insertBlock(const Addr addr, const bool is_secure,
+                     const int src_master_ID, const uint32_t task_ID,
+                     BlkType *blk);
   void invalidate(BlkType *blk);
 };
 
 #endif // __MEM_CACHE_TAGS_NMRU_HH__
-
-```
-
-Again, for the implementation we can use similar code to LRU and Random replacement policies. The basic implementation is that we track the most recently used block by moving the last accessed block to the head of the MRU queue. On a replacement, we select a random block that is not the most recently used block. Below is the implementation in ```nrmu.cc```:
-
-```
-/**
- * @file
- * Definitions of a NMRU tag store.
- */
-
-#include "mem/cache/tags/nmru.hh"
-
-#include "base/random.hh"
-#include "debug/CacheRepl.hh"
-#include "mem/cache/base.hh"
-
-NMRU::NMRU(const Params *p)
-    : BaseSetAssoc(p)
-{
-}
-
-BaseSetAssoc::BlkType*
-NMRU::accessBlock(Addr addr, bool is_secure, Cycles &lat) // , int master_id)
-{
-    // Accesses are based on parent class, no need to do anything special
-    BlkType *blk = BaseSetAssoc::accessBlock(addr, is_secure, lat); // , master_id);
-
-    if (blk != NULL) {
-        // move this block to head of the MRU list
-        sets[blk->set].moveToHead(blk);
-        DPRINTF(CacheRepl, "set %x: moving blk %x (%s) to MRU\n",
-                blk->set, regenerateBlkAddr(blk),
-                is_secure ? "s" : "ns");
-    }
-
-    return blk;
-}
-
-BaseSetAssoc::BlkType*
-NMRU::findVictim(Addr addr, const bool is_secure,
-                         std::vector<CacheBlk*>& evict_blks) const
-{
-    BlkType *blk = BaseSetAssoc::findVictim(addr, is_secure, evict_blks);
-
-    // if all blocks are valid, pick a replacement that is not MRU at random
-    if (blk->isValid()) {
-        // find a random index within the bounds of the set
-        int idx = random_mt.random<int>(1, assoc - 1);
-        assert(idx < assoc);
-        assert(idx >= 0);
-        blk = sets[extractSet(addr)].blks[idx];
-        DPRINTF(CacheRepl, "set %x: selecting blk %x for replacement\n",
-                blk->set, regenerateBlkAddr(blk));
-		evict_blks.push_back(blk);
-
-    }
-
-    return blk;
-}
-
-void
-NMRU::insertBlock(PacketPtr pkt, BlkType *blk)
-{
-    BaseSetAssoc::insertBlock(pkt, blk);
-
-    int set = extractSet(pkt->getAddr());
-    sets[set].moveToHead(blk);
-}
-
-void
-NMRU::invalidate(BlkType *blk)
-{
-    BaseSetAssoc::invalidate(blk);
-
-    // should be evicted before valid blocks
-    int set = blk->set;
-    sets[set].moveToTail(blk);
-}
-
-NMRU*
-NMRUParams::create()
-{
-    return new NMRU(this);
-}
 ```
 
 ## Step 3: Register the C++ file
@@ -155,11 +84,87 @@ Each SimObject must be registered with SCons so that its Params object and Pytho
 Source('nmru.cc')
 ```
 
-## Step 4: Other things to make it work
+## Step 4: Add moveToHead and moveToTail utility functions
 
-Since your NMRU class extends from the BaseSetAssoc class, you need to make it's ```private``` members you want to access as ```protected```. Edit the visibility of ```extractSet``` function in ```src/mem/cache/tags/base_set_assoc.hh```.
+Also, we need to add moveToHead and moveToTail utility functions in set_associative.hh.
 
-## Step 5: Modify the config scripts to use your new SimObject
+In ```src/mem/cache/tags/indexing_policies/base.hh```
+
+```
+/**
+ * Move the given block to the head of the given set
+ */
+void moveToHead(CacheBlk *blk) { }
+/**
+ * Move the given block to the tail of the given set
+ */
+void moveToTail(CacheBlk *blk) { }
+```
+
+In ```src/mem/cache/tags/indexing_policies/set_associative.hh```
+
+```
+void moveToHead(CacheBlk *blk);
+void moveToTail(CacheBlk *blk);
+
+/**
+ * Swap the blocks in a set
+ */
+void swap(CacheBlk *blk1, CacheBlk *blk2){
+  CacheBlk* temp = blk1;
+  blk1=blk2;
+  blk2=temp;
+}
+
+```
+
+In ```src/mem/cache/tags/indexing_policies/set_associative.cc```
+
+```
+void SetAssociative::moveToHead(CacheBlk *blk)
+{
+  uint32_t set_id = extractSet(blk->tag);
+  std::vector<ReplaceableEntry*> cur_set = sets[set_id];
+  CacheBlk* head = static_cast<CacheBlk*>(cur_set[0]);
+
+  // just swap with the top element
+  for(const auto& entry : cur_set){
+	CacheBlk* temp = static_cast<CacheBlk*>(entry);
+	if(temp==blk){
+	  swap(temp,head);
+      DPRINTF(CacheRepl, "set %x: moving blk %x to MRU\n",
+              set_id, blk->tag);
+	  break;
+	}
+  }
+}
+
+void SetAssociative::moveToTail(CacheBlk *blk)
+{
+  uint32_t set_id = extractSet(blk->tag);
+  std::vector<ReplaceableEntry*> cur_set = sets[set_id];
+  CacheBlk* tail = static_cast<CacheBlk*>(cur_set[assoc-1]);
+
+  // just swap with the tail element
+  for(const auto& entry : cur_set){
+	CacheBlk* temp = static_cast<CacheBlk*>(entry);
+	if(temp==blk){
+	  swap(temp,tail);
+      DPRINTF(CacheRepl, "set %x: moving blk %x to MRU\n",
+              set_id, blk->tag);
+	  break;
+	}
+  }
+}
+
+```
+
+## Step 5: Other things to make it work
+
+Since your NMRU class extends from the BaseSetAssoc class, you need to make it's ```private``` members you want to access as ```protected```. Edit the visibility of ```extractSet``` function in ```src/mem/cache/tags/indexing_policies/set_associative.hh```.
+
+
+## Step 6: Modify the config scripts to use your new SimObject
 
 Finally, you need to create your SimObject in the config scripts. If you’re using the se.py configuration script, you can simply change the L1D cache at the end of ```se.py``` file as below:
 
@@ -168,4 +173,4 @@ for i in xrange(np):
         system.cpu[i].dcache.tags = NMRU()
 ```
 
-The changeset to add all of the NMRU code can be found here: [nmru-patch]({{site.baseurl}}/hws/nmru-patch). You can apply this patch by using git am.
+[//]: <> (The changeset to add all of the NMRU code can be found here: [nmru-patch]({{site.baseurl}}/hws/nmru-patch). You can apply this patch by using git am.)
