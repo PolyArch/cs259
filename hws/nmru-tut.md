@@ -184,6 +184,7 @@ void moveToTail(CacheBlk *blk) { }
 In ```src/mem/cache/tags/indexing_policies/set_associative.hh```
 
 ```
+#include "debug/CacheRepl.hh"
 void moveToHead(CacheBlk *blk);
 void moveToTail(CacheBlk *blk);
 
