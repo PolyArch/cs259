@@ -91,6 +91,7 @@ recently used block by moving the last accessed block to the head of the MRU que
 #include "base/random.hh"
 #include "debug/CacheRepl.hh"
 #include "mem/cache/base.hh"
+#include "mem/cache/tags/indexing_policies/set_associative.hh"
 
 NMRU::NMRU(const Params *p)
     : BaseSetAssoc(p)
@@ -105,7 +106,8 @@ NMRU::accessBlock(Addr addr, bool is_secure, Cycles &lat) // , int master_id)
 
     if (blk != NULL) {
         // move this block to head of the MRU list
-		indexingPolicy->moveToHead(blk);
+		SetAssociative *temp = dynamic_cast<SetAssociative*>(indexingPolicy);
+		temp->moveToHead(blk);
     }
 
     return blk;
@@ -138,14 +140,16 @@ NMRU::insertBlock(const Addr addr, const bool is_secure,
                      BlkType *blk)
 {
     BaseSetAssoc::insertBlock(addr, is_secure, src_master_ID, task_ID, blk);
-	indexingPolicy->moveToHead(blk);
+	SetAssociative *temp = dynamic_cast<SetAssociative*>(indexingPolicy);
+	temp->moveToHead(blk);
 }
 
 void
 NMRU::invalidate(BlkType *blk)
 {
     BaseSetAssoc::invalidate(blk);
-    indexingPolicy->moveToTail(blk);
+	SetAssociative *temp = dynamic_cast<SetAssociative*>(indexingPolicy);
+	temp->moveToTail(blk);
 }
 
 NMRU*
