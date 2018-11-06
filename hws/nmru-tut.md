@@ -191,16 +191,6 @@ In ```src/mem/cache/tags/indexing_policies/set_associative.hh```
 #include "debug/CacheRepl.hh"
 void moveToHead(CacheBlk *blk);
 void moveToTail(CacheBlk *blk);
-
-/**
- * Swap the blocks in a set
- */
-void swap(CacheBlk *blk1, CacheBlk *blk2){
-  CacheBlk* temp = blk1;
-  blk1=blk2;
-  blk2=temp;
-}
-
 ```
 
 In ```src/mem/cache/tags/indexing_policies/set_associative.cc```
@@ -216,7 +206,7 @@ void SetAssociative::moveToHead(CacheBlk *blk)
   for(const auto& entry : cur_set){
 	CacheBlk* temp = static_cast<CacheBlk*>(entry);
 	if(temp==blk){
-	  swap(temp,head);
+	  std::swap(temp,head);
       DPRINTF(CacheRepl, "set %x: moving blk %x to MRU\n",
               set_id, blk->tag);
 	  break;
@@ -234,7 +224,7 @@ void SetAssociative::moveToTail(CacheBlk *blk)
   for(const auto& entry : cur_set){
 	CacheBlk* temp = static_cast<CacheBlk*>(entry);
 	if(temp==blk){
-	  swap(temp,tail);
+	  std::swap(temp,tail);
       DPRINTF(CacheRepl, "set %x: moving blk %x to MRU\n",
               set_id, blk->tag);
 	  break;
