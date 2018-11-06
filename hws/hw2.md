@@ -5,7 +5,7 @@ title: Homework 2
 
 ## Overview
 
-Due: end of day Friday November 9th
+Due: end of day Sunday November 11th
 
 The goals of this homework are:
 1. Get experience creating a new SimObject in gem5
