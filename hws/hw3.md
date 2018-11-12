@@ -55,8 +55,6 @@ a C++ switch case. We first decode the top 5 bits of the opcode byte. There are
 32 possible ways in which we can construct binary numbers using 5 bits. The
 switch case lists all the possible cases.
 
-## Decoding in gem5
-
 All x87 instructions begin with an opcode byte in the range 0xD8 to 0xDF.
 Therefore the topmost 5 bits always are 0x1B. For this case, we include the
 file x87.isa. Let's jump to that file. In this file, we start with decoding the

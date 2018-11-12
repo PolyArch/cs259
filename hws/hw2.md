@@ -11,6 +11,8 @@ The goals of this homework are:
 1. Get experience creating a new SimObject in gem5
 2. Practice considering tradeoffs in cache design
 
+This is based on [gem5 101 homework 5](http://www.gem5.org/Gem5_101).
+
 ## Step 1: Implement NMRU replacement policy
 
 You can follow the tutorial here: [nmru tutorial]({{site.baseurl}}/hws/nmru-tut). This will walk you through how to create the NMRU policy.
