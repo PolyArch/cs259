@@ -132,6 +132,7 @@ registers or memory are affected by the instruction portion. There is
 documentation available from GCC and other sources. Some recommend reading:
 
 http://www.ibiblio.org/gferg/ldp/GCC-Inline-Assembly-HOWTO.html
+
 http://locklessinc.com/articles/gcc_asm/
 
 Since it is sort of hard to understand how to correctly specify all the constraints related to assembly instructions, we are providing an implementation with some explanation.
