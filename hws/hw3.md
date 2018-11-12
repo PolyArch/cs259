@@ -66,10 +66,14 @@ bottom three bits. For example, FSUB and FSUBR are represented by opcodes 0xD8
 and 0xDC, ie. the cases 0x0 and 0x4. To distinguish between the functionality
 provided by these different opcodes for the same instruction, you will have to
 understand the meaning of the ModRM field of the instruction. Read about it in
-the manual linked to. In the file x87.isa, you can check that we have FSUB
+the manual linked to. 
+
+## Hacking the Decoder for FSUBR
+
+In the file x87.isa, you can check that we have FSUB
 appearing the cases statements for 0x0 and 0x4. You can also observe that
 FSUBR's implementation is missing (what we mean here, is that there is a function call
-to ```fsubr()```, which is not implemented, we'll need to replace that in a sec).
+to ```fsubr()```, which is not implemented.  We'll need to replace that...).
 
 1. As a first step, understand the difference between the two implementations required 
 for the FSUBR instruction: one with opcode byte 0xD8 and the one with opcode byte 0xDC.
