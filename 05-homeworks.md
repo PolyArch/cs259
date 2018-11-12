@@ -6,7 +6,7 @@ title: Homeworks
 * [Homework 0]({{site.baseurl}}/hws/hw0) -- Learning Gem5 (not turned in)
 * [Homework 1]({{site.baseurl}}/hws/hw1) -- Gem5 Intro  ([prof's answers]({{site.baseurl}}/hws/hw1-sol))
 * [Homework 2]({{site.baseurl}}/hws/hw2) -- Gem5 Cache Replacement Policy
-* [Homework 3]({{site.baseurl}}/hws/hw3) -- Gem5 Instruction Hacking (in prog.)
+* [Homework 3]({{site.baseurl}}/hws/hw3) -- Gem5 Instruction Hacking
 
 ### Late Policy
 

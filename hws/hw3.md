@@ -9,7 +9,7 @@ Due: Before Thanksgiving (midnight Nov. 21st)
 
 Actually Due: Monday Nov. 26th (but do you really want to do work over Thanksgiving??)
 
-Expected Duration: 1-3 Hours
+Expected Duration: 1.5-3 Hours (more if you try to understand gem5 operation in detail)
 
 Purpose The purpose of this assignment is to help you become familiar with
 gem5's language for describing instruction sets. Perhaps some of your projects may need to
@@ -78,9 +78,9 @@ for the FSUBR instruction: one with opcode byte 0xD8 and the one with opcode byt
 For this, you should read the description of FSUBR provided in the manual on
 x87 instructions.  Note that there are equivalently two versions of FSUB: 
 FSUB1 and FSUB2. Remember that x87 has a stack of operands st(0) is the head of the
-stack...
-*To be honest, even if you don't figure out the difference, you can still do the rest
-of the assignment through pattern matching/trial and error.  *
+stack...  
+*Even if you don't figure out the difference, you can still do the rest
+of the assignment through pattern matching/trial and error.*
 
 2. Now, notice the three places in which the placeholder ```fsubr()``` appears in the file x87.isa.
    Replace the currently appearing statements with ones similar to those
@@ -99,7 +99,7 @@ different implementations: one that only uses registers (_R), one that reads one
 the operands from the memory (_M) using the address provided in the instruction and
 the last one uses the address of the instruction pointer to read the operand (_P).
 The micro-ops used for the three implementations should be straight forward to
-understand (haha just kidding, at least the parts you need to modify are fairly straightforward).
+understand (haha just kidding, at least the parts you need to modify are fairly straightforward).  
   *Note that the way gem5's instruction parser works requires us to define all the three
   implentations for the FSUBR instruction. In all you should have six separate
   code blocks for FSUBR, like those specified for FSUB.*
@@ -111,7 +111,7 @@ src/arch/x86/isa/micro-ops/fpop.isa. So, you would not need to do anything for
 this step.
 
 5. Compile gem5 for x86 ISA to test that you did not make any mistakes in the
-   implementation.
+   implementation.  
 *There are many aspects of gem5's ISA language that we have not discussed at
 all. Most of these aspects are not documented at all and one needs to figure
 them out by going over the code in relevant files. (SAD!)*
@@ -120,8 +120,7 @@ them out by going over the code in relevant files. (SAD!)*
    purpose, we will first write a short C program that reads a file with two
 floating point numbers, subtracts them and prints the output. To make sure that
 FSUBR is used for subtraction, we will explicitly use it using the inline
-assembly feature of GCC.
-
+assembly feature of GCC.  
 Assembly instructions are written inline with the rest of the code using the
 'asm' code block. This code block contains two portions: the instruction
 portion, and the constraint portion. In instruction portion is a string
