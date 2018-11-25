@@ -32,9 +32,22 @@ submitted for this course is sufficient.  Please see me if this is unclear.
 
 My guess is that most will opt for hacksim.
 
+## Benchmark Suggestions:
+
+If you have a simulator-hacking project, you'll need to choose a set of
+benchmarks that are appropriate for evaluation of your idea.  
+
+SpecCPU 2017: [(Download here -- Licensed for UCLA only)](https://ucla.box.com/s/jx5nv8j96g7x4l2tlznc7ixs30ot853r):  This is a fairly broad benchmark suite for single core applications.  
+
+A few others simple ones:
+[Mediabench](http://mathstat.slu.edu/~fritts/mediabench/): Mostly video/image compression/decompression.
+[Polybench](http://web.cse.ohio-state.edu/~pouchet.2/software/polybench/): Simple dense linear algebra codes.
+[CortexSuite](http://cseweb.ucsd.edu/groups/bsg/): Machine learning and vision benchmarks.
+
+
 ## Hacksim Ideas:
 
-The following is a short list of ideas.  I will update over the first two weeks of the class.
+The following is a short list of ideas. 
 
 ### Microarchitecture Ideas:
 1. *Hack Branch Predictor:*  Branch prediction has been crucial to out-of-order
