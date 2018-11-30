@@ -37,7 +37,7 @@ My guess is that most will opt for hacksim.
 If you have a simulator-hacking project, you'll need to choose a set of
 benchmarks that are appropriate for evaluation of your idea.  
 
-SpecCPU 2017: [(Download here -- Licensed for UCLA only)](https://ucla.box.com/s/jx5nv8j96g7x4l2tlznc7ixs30ot853r):  This is a fairly broad benchmark suite for single core applications.  
+SpecCPU 2017: [(Download here -- Licensed for UCLA only, technically should be used on tetracosa)](https://ucla.box.com/s/jx5nv8j96g7x4l2tlznc7ixs30ot853r):  This is a fairly broad benchmark suite for single core applications.  
 
  A few others simple ones:
 * [Mediabench](http://mathstat.slu.edu/~fritts/mediabench/): Mostly video/image compression/decompression.
