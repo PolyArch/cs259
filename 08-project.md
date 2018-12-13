@@ -8,7 +8,7 @@ topic must be selected before exam 2, but I expect the majority of the work to h
 
 ### Quick Facts
 
-* Due Date: December 14th, 12pm (Noon)
+* Due Date: December 14th, end of day ~~12pm (Noon)~~
 * Subject: Anything you want, some suggestions are provided
 * Work in teams: Yes, 2-3 Students
 * Deliverables: Project Report + Source Code tarball
