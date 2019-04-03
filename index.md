@@ -31,7 +31,7 @@ and adapting to program behavior.
 Not really -- the computation behind machine learning and how that is exploited with 
 hardware is what is most relevant here.  That said, I welcome ML experts, or even projects
 that focus on the algorithm aspect of a problem (provided there is some relationship to hardware or
-hardware suppport).
+hardware support).
 
 ### Prerequisites
 

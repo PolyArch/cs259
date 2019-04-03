@@ -23,20 +23,20 @@ and adapting to program behavior.
 
 Several important specific goals are:
 
-* Develop skills in domain-specialization (reasona about how application/domain properties can be exploited with hardware mechanisms) 
+* Develop skills in domain-specialization (reason about how application/domain properties can be exploited with hardware mechanisms) 
 * Gain understanding of the current state of the art within acceleration for machine learning, both in academia and in industry.
 
 Also, there are some general goals which hold for any architecture/hardware course:
 
 * Gain intuition and reasoning skills regarding fundamental architecture tradeoffs of hardware design choices (performance/area/power/complexity/generality).
-* Understand microarchitecture techniques for extracting paralellism and exploiting locality.
+* Understand microarchitecture techniques for extracting parallelism and exploiting locality.
 * Learn about evaluation methods, including simulation, analytical modeling, and mechanistic models.  
 
 ### Course Components:
 
 Logistically, this course has 4 components.  
 * *Online discussion on Piazza:* During this course we will read a number of research papers from
-  literature.  We will discusss these on Piazza. See
+  literature.  We will discuss these on Piazza. See
 [review]({{site.baseurl}}/04-discussion/) page for more instructions.
 
 * *In-class discussion:*  You should aim to participate in every in-class
