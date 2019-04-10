@@ -53,26 +53,26 @@ You may do the following:
  
 3. What do you suspect is the limiting factor for performance of each kernel (compute,dram,scratchpad)?  Where does the implementation fall on the roofline model for your particular GPU?
 
-  For this, you can/should measure different bandwidths using nvprof.  Eg:
-
-  ```
-  /usr/local/cuda-10.1/bin/nvprof -m dram_read_throughput ./vectorAdd
-  ```
-
-  A good description of other b/w measurements is here:
-  https://stackoverflow.com/questions/37732735/nvprof-option-for-bandwidth
+    For this, you can/should measure different bandwidths using nvprof.  Eg:
+  
+    ```
+    /usr/local/cuda-10.1/bin/nvprof -m dram_read_throughput ./vectorAdd
+    ```
+  
+    A good description of other b/w measurements is here:
+    https://stackoverflow.com/questions/37732735/nvprof-option-for-bandwidth
 
 4. How does the implementation compare with CUDNN?  (use same batch size in CUDNN)
-
-  Probably the easiest way to do this without doing any real work is to use
-  [DeepBench from Baidu](https://github.com/baidu-research/DeepBench)
   
-  You should be able to modify the “code/kernels/conv_problems.h” or
-  “gemm_problems.h” for whatever parameters you are using for batch size.  Then
-  compile and run the tests in the  “code/nvidia” folder.  (all_reduce won’t
-  compile, but this shouldn’t be a problem)
-  
-  Otherwise, you could just use CUDNN directly.
+    Probably the easiest way to do this without doing any real work is to use
+    [DeepBench from Baidu](https://github.com/baidu-research/DeepBench)
+    
+    You should be able to modify the “code/kernels/conv_problems.h” or
+    “gemm_problems.h” for whatever parameters you are using for batch size.  Then
+    compile and run the tests in the  “code/nvidia” folder.  (all_reduce won’t
+    compile, but this shouldn’t be a problem)
+    
+    Otherwise, you could just use CUDNN directly.
 
 5. What optimizations did you find most useful/least useful?
 
