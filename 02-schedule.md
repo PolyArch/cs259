@@ -6,7 +6,7 @@ title: Reading Schedule
 Schedule is in progress, and will depend on which papers you'd like to read.  
 The current schedule outline is [here](https://docs.google.com/document/d/1cDOiy-sW2crkD10tC7b7ekisetygA-bMRHQnZIpABhs/edit).  
 
-I'd like you to send me a proposed paper to lead discussion on by end of week 2. The reading list which has a number of options to choose from.
+I'd like you to send me a proposed paper to lead discussion on by end of week 2. The reading list has a number of options to choose from, and of course you are free to suggest any relevant paper.
 
 Link to [Piazza](http://piazza.com/ucla/spring2019/cs259) for class discussions.
 
