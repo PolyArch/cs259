@@ -64,12 +64,15 @@ You may do the following:
 
 4. How does the implementation compare with CUDNN?  (use same batch size in CUDNN)
 
-Probably the easiest way to do this without doing any real work is to use
-[DeepBench from Baidu](https://github.com/baidu-research/DeepBench)
-
-You should be able to modify the “code/kernels/conv_problems.h” or “gemm_problems.h” for whatever parameters you are using for batch size.  Then compile and run the tests in the  “code/nvidia” folder.  (all_reduce won’t compile, but this shouldn’t be a problem)
-
-Otherwise, you could just use CUDNN directly.
+  Probably the easiest way to do this without doing any real work is to use
+  [DeepBench from Baidu](https://github.com/baidu-research/DeepBench)
+  
+  You should be able to modify the “code/kernels/conv_problems.h” or
+  “gemm_problems.h” for whatever parameters you are using for batch size.  Then
+  compile and run the tests in the  “code/nvidia” folder.  (all_reduce won’t
+  compile, but this shouldn’t be a problem)
+  
+  Otherwise, you could just use CUDNN directly.
 
 5. What optimizations did you find most useful/least useful?
 
