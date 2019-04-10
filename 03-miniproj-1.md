@@ -28,7 +28,7 @@ You can run “deviceQuery” in the cuda samples under 1_Utilities to figure ou
 NVIDIA_CUDA-10.1_Samples/1_Utilities/deviceQuery/deviceQuery
 ```
 
-###Task:  
+### Task:  
 Implement and evaluate a CUDA version of a ``classifier'' (fully connected, ie. matrix-vector multiply) and 3D convolution kernel, with parameters from VGG:
 
 * Conv1: Nx=224 Ny=224 Kx=3  Ky=3  Ni=64   Nn=64 
@@ -45,7 +45,7 @@ You may do the following:
 * Parallelize using any strategy  (across batches or across/within feature maps)
 * If you would prefer to use fp16/int16, that's fine too...
 
-###What to turn in:
+### What to turn in:
 
 1. What was your basic parallelization strategy?  Are there limitations in scaling this strategy, or consequences for throughput or latency?
 
@@ -53,15 +53,14 @@ You may do the following:
  
 3. What do you suspect is the limiting factor for performance of each kernel (compute,dram,scratchpad)?  Where does the implementation fall on the roofline model for your particular GPU?
 
-For this, you can/should measure different bandwidths using nvprof.  Eg:
+  For this, you can/should measure different bandwidths using nvprof.  Eg:
 
-```
-/usr/local/cuda-10.1/bin/nvprof -m dram_read_throughput ./vectorAdd
-```
+  ```
+  /usr/local/cuda-10.1/bin/nvprof -m dram_read_throughput ./vectorAdd
+  ```
 
-A good description of other b/w measurements is here:
-https://stackoverflow.com/questions/37732735/nvprof-option-for-bandwidth
-
+  A good description of other b/w measurements is here:
+  https://stackoverflow.com/questions/37732735/nvprof-option-for-bandwidth
 
 4. How does the implementation compare with CUDNN?  (use same batch size in CUDNN)
 
