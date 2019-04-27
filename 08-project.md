@@ -57,7 +57,7 @@ valid.
 A few broad project ideas are below.  These are meant as examples; projects that
 don't fit into any of these categories are acceptable.
 
-###Accelerator for Machine Learning Kernel: 
+### Accelerator for Machine Learning Kernel: 
 
 This project is straightforaward, but very broad: design/evaluate a hardware accelerator for an ML
 algorithm of interest.  There are different facets of this to think about to
@@ -83,20 +83,10 @@ to a whole domain.  Each would offer different tradeoffs and can be interesting.
 
 The evaluation criteria could include how large, fast, and power hungry the design
 is as compared to some relevant baseline.  You might choose a baseline to be an
-existing CPU/GPU code, or a 
-
-To get numbers, you could use a custom simulator, or an analytical model.  Feel
+existing CPU/GPU code.
+For evaluation, you could use a custom simulator, or an analytical model.  Feel
 free to use an FPGA if you already know how. : ) 
  
-There  are many interesting variations and aspects you could study here:
-Irregular workloads:  Though we will talk in detail in the class about dense
-matrix codes, irregular workloads have significant challenges and could benefit
-from specialization.  (eg. capsule nets, sparse neural networks, etc.)
-Generality:  Could be interesting to attempt to develop a more general purpose
-accelerator good at Specialize to a particular deployment case: For example,
-you could attempt to create an accelerator that’s tuned for extremely low power
-consumption (sacrificing performance), for use in an IoT device.
-
 ### CPU Tensor Cores (or other CPU-core enhancements):  
 
 Implement a tensor core
