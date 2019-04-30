@@ -18,7 +18,7 @@ matrices are easy, but sparse matrices are a little harder). The goal of the ass
 is to get familiar with analytical modeling techniques, by using models to predict
 performance of accelerator hardware.
 
-### Part 1: GPU Modeling
+## Part 1: GPU Modeling
 
 In mini-project 1, you wrote a CUDA kernel, and tried some optimizations to improve the
 performance on the V100 architecture.  Now, you will try to build an analytical model to 
@@ -49,18 +49,18 @@ relative bandwidth difference between the cache and memory.
 
 Required Experiments:
 1. Change one matrix size dimension over some range: how does your model compare to the GPU's measured performance on your kernel?
-2. Change one tiling 
+2. Change one tiling parameter over some range: how does your model compare to the GPU's measured performance on your kernel?
 3. Use your model to test sensitivity to two architecture parameters.
    Specifically, you might try varying the L2 cache size by 2x, or the compute
 by 2x.  Does this confirm of change the previous conclusions you made about the
 architecture bottlenecks?
 
 Questions:
-* What was your modleing approach?  Any challenges?  (show the model)
+* What was your modeling approach?  Any challenges?  (show the model)
 * What was your model's average error for these workloads?
-* Were there any arbitrary constants in your model?  What do you think they reprsent?
+* Were there any arbitrary constants in your model?  What do you think they represent?
 
-### Part 2: Accelerator Modeling
+## Part 2: Accelerator Modeling
 
 What about accelerators?  Can we model them even though we cannot validate them against a simulator?  Sure!
 
@@ -74,10 +74,17 @@ in papers is made up using (sometimes wrong) analytical/simulator models anyways
 
 In addition to showing the model, choose one of the following experiments:
 * Compare your performance against the data in the associated paper (if possible).  Was it similar?  Why or why not?
-* Or, compare your projected accelerator's performance against the GPU for a range of input dimensions (similar to required experiment 1 from Part 1).  Does the accelerator relieve any bottlenecks? Or is it slowed down by bottlenecks not on the GPU.
+* Compare your projected accelerator's performance against the GPU for a range of input dimensions (similar to required experiment 1 from Part 1).  Does the accelerator relieve any bottlenecks? Or is it slowed down by bottlenecks not on the GPU.
+* Use your model to test sensitivity to architecture parameters -- what is the main bottleneck of the accelerator?
+
+### Caveats
+* Your models may be specific to one "dataflow" (loop schedule)
+* Your models don't need to be valid over the entire range of input/architecture parameters. That would be really hard!
 
 ### What to turn in: 
 Turn in the answers to the questions, and any associated graphs.
 
 ### How to turn in:
-I will make an assignment on CCLE where you should turn your report.  
+I will make an assignment on CCLE where you should turn your report. 
+
+ 
