@@ -59,7 +59,7 @@ don't fit into any of these categories are acceptable.
 
 ### Accelerator for Machine Learning Kernel: 
 
-This project is straightforaward, but very broad: design/evaluate a hardware accelerator for an ML
+This project is straightforward, but very broad: design/evaluate a hardware accelerator for an ML
 algorithm of interest.  There are different facets of this to think about to
 create an interesting problem:
 
@@ -75,7 +75,7 @@ like GBDT, SVM, LR.
 
 * Algorithm optimizations: Could be interesting to try different optimizations
 for accelerators (eg. winograd?), or combine different sources of efficiency in
-one acclererator (how to combine exploiting sparsity with bit-level optimizations?).
+one accelerator (how to combine exploiting sparsity with bit-level optimizations?).
 
 * Type of accelerator: The accelerator can either be fixed-function, take
 algorithm-specific commands (eg. NN layer parameters), or be more general
@@ -121,14 +121,14 @@ time.
 ### Novel GPU Parallelization:  
 
 Generally, kernels on GPU are parallelized one-at-a-time (ie. one layer
-at a time across all CUDA cores).  Sometimes this is innefficient because
+at a time across all CUDA cores).  Sometimes this is inefficient because
 there isn't enough work per kernel.  What if two or more kernels were running
 at the same time on the GPU (each running its own element of a batch?)?  
 This could lead to more efficient execution for a variety of networks.
 
 This could also be done for an accelerator as well!
 
-One could also look into paralelizing other ML algorithms on GPUs like
+One could also look into parallelizing other ML algorithms on GPUs like
 gradient-boosting tree training, or various algorithms for recommender systems
 like alternating least squares.
 
@@ -151,6 +151,21 @@ so far.
   utilization on GPUs is to determine how to choose a Warp (this is the GPU
 word for a thread) to execute next -- this is called warp scheduling.  Could we
 maybe use reinforcement learning here?
+
+Evaluation: For any computer-architecture study, you can always use a generic
+simulator with generic workloads.  For example, you could use [gem5](http://learning.gem5.org/) 
++ SPECINT 2017, which I can provide instructions for downloading. 
+
+The other option is to use the infrastructure from prior microarchitecture
+competitions.  
+
+1. [Championship branch prediction](https://www.jilp.org/cbp2016/framework.html)
+
+2. [Data Prefetching Championship](https://dpc3.compas.cs.stonybrook.edu/)
+
+3. [Championship Value Prediction](https://www.microarch.org/cvp1/rules.html)
+
+4. [Memory Scheduling Championship](http://www.cs.utah.edu/~rajeev/jwac12/)
 
 ### Universal Approximation Accelerators:  
 

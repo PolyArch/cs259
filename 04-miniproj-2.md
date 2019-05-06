@@ -79,7 +79,11 @@ In addition to showing the model, choose one of the following experiments:
 
 ### Caveats
 * Your models may be specific to one "dataflow" (loop schedule)
-* Your models don't need to be valid over the entire range of input/architecture parameters. That would be really hard!
+
+* Your models don't need to be valid over the entire range of
+  input/architecture parameters. That would be really hard!  My suggestion is
+to pick a small range of parameters to focus on, over which the code you wrote
+before is legal.
 
 ### What to turn in: 
 Turn in the answers to the questions, and any associated graphs.
