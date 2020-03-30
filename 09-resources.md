@@ -3,6 +3,8 @@ layout: page
 title: Resources
 ---
 
+These directions will be updatead soon!
+
 ### GPU Machine
 
 I am providing a shared server for the class to use during the course, primarily as way to use

@@ -8,10 +8,10 @@ topic would ideally be selected/proposed by week 5.
  
 ### Quick Facts
 
-* Due Date: June 14th
+* Due Date: June 12th, Midnight
 * Subject:  If it has a relationship to ML & hardware, its acceptable!
-* Work in teams: Yes, 2-4 Students
-* Deliverables: Project Report + Source Code tarball
+* Work in teams: Yes, 1-4 Students (preferrably 2-3)
+* Deliverables: Project Report + Source Code tarball (will not distribute)
 
 ## Project Content
 
@@ -85,7 +85,27 @@ The evaluation criteria could include how large, fast, and power hungry the desi
 is as compared to some relevant baseline.  You might choose a baseline to be an
 existing CPU/GPU code.
 For evaluation, you could use a custom simulator, or an analytical model.  Feel
-free to use an FPGA if you already know how. : ) 
+free to use an FPGA if you already have some experience.
+
+### Optimization Framework ###
+
+Timeloop [Timeloop/Accelergy](http://accelergy.mit.edu/tutorial.html) and
+[MAESTRO](http://maestro.ece.gatech.edu/) are tools that allow the modeling of performance
+and energy based on the dataflow.  These modeling tools can be enhanced in a number of 
+ways:
+
+* Add new algorithm features to the model.  For example, add the ability to
+do model inter-layer parallelism. 
+
+* Add some new hardware feature: perhaps support for different kinds of sparsity that
+we discuss in class.
+
+* These tools require enormous amounts of time to exhaustively search the space of 
+transformations to find best one. Propose a technique (perhaps a heuristic technique) to 
+search the space more quickly.
+
+* Add the ability to automatically search over hardware features under certain area/power/performance
+ constraints.
  
 ### CPU Tensor Cores (or other CPU-core enhancements):  
 

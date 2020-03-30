@@ -3,15 +3,16 @@ layout: default
 title: Overview
 ---
 
-# CS259: Machines that Learn
+# CS259: Learning Machines
  
 ### About / Contact
 
-* Spring 2019
+* Spring 2020
 * Instructor: Tony Nowatzki  [(cs-page)](http://web.cs.ucla.edu/~tjn)
 * Email: tjn@cs.ucla.edu (include [cs259] in subject line)
-* Course When/Where: 2:00pm-3:50pm, Boelter 5420 
-* Office hours: 11:00am-12:00pm Wed/Fri  (Room 484, E6)
+* Course When/Where: Tues/Thurs 2:00pm-3:50pm, Zoom
+* [Zoom Join URL for Class](https://ucla.zoom.us/j/375217378)
+* Office hours: 2:00-3:00pm Wed/Fri (same zoom link as above) -- You must warn me by 10:00am that day, or I might not join zoom.
 
 ### Description
 

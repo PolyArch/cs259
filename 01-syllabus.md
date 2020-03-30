@@ -3,10 +3,11 @@ layout: page
 title: Syllabus
 ---
 
-### Advanced Computer Architecture (CS251a)
+### Learning Machines
 * Instructor: Tony Nowatzki
-* Term: Spring 2019
+* Term: Spring 2020
 * Textbook: None! 
+* [Zoom Join URL for Class](https://ucla.zoom.us/j/375217378)
 
 ### Course Objectives
 
@@ -40,23 +41,21 @@ Logistically, this course has 4 components.
 [review]({{site.baseurl}}/04-discussion/) page for more instructions.
 
 * *In-class discussion:*  You should aim to participate in every in-class
-  discussion. I will do my best to track who is participating. Remember, this
+  discussion. That might be somewhat challenging given we are using zoom, but that makes it 
+  even more important.  I will do my best to track who is participating. Remember, this
   class will be fun and interesting if you make it so!
 
 * Mini-Project (15%) There will be two mini projects which can also be performed in groups:
   - Parallelizing a machine learning kernel using CUDA on our V100 GPU. 
   - Build a ML-accelerator simulator, which is correct and produces accurate performance estimates.
 
-* Leading Class Discussion (15%) Each student (or group) will lead 1 lecture
+* Leading Class Discussion (15%) Each student (or group of 2) will lead 1 lecture/discussion
 
-* *Project:*  Project (40%) Group based research/implementation project with 2-4 students. Please see the project
-handout, and feel free to use Piazza to help form groups. You will need to propose a project by the beginning
-of the 5th week of class, so please start thinking early.
-See [project]({{site.baseurl}}/08-project/) page for more details.
+* *Project:*  Project (40%) Group based research/implementation project with 1-4 students. Please see the project handout, and feel free to use Piazza to help form groups. You will need to propose a project by the beginning of the 5th week of class, so please start thinking early. See [project]({{site.baseurl}}/08-project/) page for more details.
 
 ## Grade Breakdown
-* 30% In-class online discussion
-    - Note you can make up for being quiet in class by participating extensively in online discussion
+* 30% In-class / online discussion
+    - Note you can make up for being quiet in class (or being in another timezone) by participating extensively in online discussion
     - And likewise make up for having little online-discussion by being vocal in class
 * 15% Mini-projects
     - 7.5% Each
