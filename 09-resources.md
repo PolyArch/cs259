@@ -3,8 +3,6 @@ layout: page
 title: Resources
 ---
 
-These directions will be updatead soon!
-
 ### GPU Machine
 
 I am providing a shared server for the class to use during the course, primarily as way to use
@@ -16,7 +14,7 @@ To get an account, follow these instructions:
 ```
 ssh account@tetracosa.cs.ucla.edu 
 account@tetracosa.cs.ucla.edu's password: 
-two*too=sixteen #give this line previous line as password, then answer the following: 
+these-four4things #give this line previous line as password, then answer the following: 
 Personal name? (first last): Tess Testa 
 Username? (small letters or digits only): tt 
 Password? (12 or more characters): 
@@ -30,7 +28,11 @@ after that you will receive this response:
 Account configured. It will be activated within one workday.
 ``` 
 
-* Note 1: It doesn't have a large hard-drive at the moment, so I may need to upgrade if many students are using it and we run out.
+#### IMPORTANT:
+
+* Note 1: The home drive doesn't have a large hard-drive at the moment.  So, please do not put
+  any large files in your home directory since it doesn't have much space.
+Instead make a folder with your user name within the folder: /usr/eda/cs259/
 
 * Note 2: No bitcoin mining please. ; )
 
