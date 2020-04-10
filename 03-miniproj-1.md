@@ -8,11 +8,18 @@ The goal of the assignment is to get some experience working with data-parallel 
 
 Due: April 24th, 11:55pm
 
+Can you work in groups: Yes -- Preferably groups of two.  
+
+(If you really want to work in a group of three and have a way to make sure everyone learns, send me a note to get special permission.)
+
 ### Getting Started:
 
-Follow the setup guide [here]({{site.baseurl}}/09-resources/) to get an account on tetracosa.cs.ucla.edu.  Please make sure not to put extra information in your home folders.  Instead use the eda drive.
+Follow the setup guide [here]({{site.baseurl}}/09-resources/) to get an account
+on tetracosa.cs.ucla.edu.  Please make sure not to put any files in
+your home folders, as there is limited space there.  Instead use the eda drive 
+(specifically  /usr/eda/cs259/[your\_name], as the resource page instructs).
 
-After that, you may want to look at some samples from NVIDIA; these can be setup by running:
+After setting up, you may want to look at some samples from NVIDIA; these can be setup by running:
 
 ```
 bash /usr/local/cuda-10.1/bin/cuda-install-samples-10.1.sh .
@@ -80,7 +87,7 @@ You may do the following:
 
 5. What optimizations did you find most useful/least useful?
 
-6. Paste the cuda kernel in the doc, don't worry if it's too long or ugly.
+6. Paste the cuda kernel in the doc. Don't worry if it's too long or ugly.
 
 ### How to turn in: 
 
