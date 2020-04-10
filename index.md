@@ -12,7 +12,7 @@ title: Overview
 * Email: tjn@cs.ucla.edu (include [cs259] in subject line)
 * Course When/Where: Tues/Thurs 2:00pm-3:50pm, Zoom
 * [Zoom Join URL for Class](https://ucla.zoom.us/j/375217378)
-* Office hours: 2:00-3:00pm Wed/Fri (same zoom link as above) -- You must warn me by 10:00am that day, or I might not join zoom.
+* Office hours: 2:00-3:00pm Wed/Fri (same zoom link as above) -- Please warn me at least 30 minutes before, or I might not join zoom.
 
 ### Description
 
