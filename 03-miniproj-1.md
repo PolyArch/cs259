@@ -75,7 +75,7 @@ You may do the following:
 
 4. How does the implementation compare with CUDNN?  (use same batch size in CUDNN)
   
-    Probably the easiest way to do this without doing any real work is to use
+    Probably the easiest way to do this without understanding CUDNN is to use
     [DeepBench from Baidu](https://github.com/baidu-research/DeepBench)
     
     You should be able to modify the “code/kernels/conv_problems.h” or
@@ -83,8 +83,9 @@ You may do the following:
     compile and run the tests in the  “code/nvidia” folder.  (all_reduce won’t
     compile, but this shouldn’t be a problem)
     
-    Otherwise, you could just use CUDNN directly.
-
+    I've gathered [some results](https://docs.google.com/spreadsheets/d/1LRDl_3oUGBdZlpaJv6JSguBBw9Mj6ut5QuQojfrapbs/edit#gid=0) on the V100 machine for interesting kernel sizes, and
+    the results are here.  You may use these if you like.
+    
 5. What optimizations did you find most useful/least useful?
 
 6. Paste the cuda kernel in the doc. Don't worry if it's too long or ugly.
