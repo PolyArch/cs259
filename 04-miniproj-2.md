@@ -6,7 +6,8 @@ title: Mini-project 2
 ## Notes
 
 Due: May 13th, 11:55pm
-Teams: Yes, preferrably pairs
+
+Teams: Yes, preferably pairs
 
 ## Goal 
 
@@ -34,7 +35,7 @@ Models come in many forms, from mechanistic/analytical models to regression base
 By default, I suggest building mechanistic model.  The advantages are 1. no prior statistics
 background is required, and 2. the model can actually tell you something about the underlying
 system.  For example, a model designed by hand may have the memory bandwidth of the
-device as a paramter.  By tuning this paramter, you may actually observe whether and to what
+device as a parameter.  By tuning this parameter, you may actually observe whether and to what
 degree the "peak" memory bandwidth can be obtained.  
 
 ## Model inputs and outputs
@@ -48,7 +49,7 @@ The model should also include architecture specific inputs, if you deem them to 
 * Capacity of scratchpad?
 
 While the model you create will inevitably be somewhat specific to the V100 architecture, keeping
-the paramters abstract will enable you to adapt the model to accelerator architectures as well.
+the parameters abstract will enable you to adapt the model to accelerator architectures as well.
 
 Similarly, the model should be robust to the problem size.  Ie. for matrix multiply it should
 accept an [M,N,K].
@@ -78,15 +79,15 @@ For the report, please include the following, along with any supporting graphs o
 any challenges faced, and how you addressed them (or would address them).  If your model
 contains arbitrary constants, please explain why they exist or what they might mean.
 
-* Validation:  For validation, explain the set of kernel paramters you use to validate your model.
+* Validation:  For validation, explain the set of kernel parameters you use to validate your model.
 Then present an analysis that shows the error across some range of kernels.  Explain what parameter
 settings the model performs well or poorly on. 
 
-* Architecture Insight: Present an analysis of one or two paramters of your model that shed light
+* Architecture Insight: Present an analysis of one or two parameters of your model that shed light
 on some aspect of the hardware itself.  For example, does the peak computation throughput/memory
 bandwidth suggested by your model align with the datasheet.  You might try varying the L2 cache 
 size by 2x, or the compute throughput by 2x within the model to check the sensitivity.
-Which hardware paramters should future GPUs change if they
+Which hardware parameters should future GPUs change if they
 want to perform better on convolution or matrix multiplication? 
 
 In a separate attachment on CCLE, please also include the model code in whatever language you choose.
@@ -96,7 +97,7 @@ In a separate attachment on CCLE, please also include the model code in whatever
 * *How well do we need to do?*
 
   A naive model would DRAM-bound time (assuming perfect reuse) 
-and compute-bound time (assuming pefect computation), and take the minimum.  
+and compute-bound time (assuming perfect computation), and take the minimum.  
 Your approach should do better than that.
 
 * *Do we need to think about loop scheduling and tiling?*
@@ -126,7 +127,7 @@ more data.
 
 * *Is it okay if I use existing modeling tools?*
 
-  If you can figure out how to use eg TimpeLoop for this project, that would be fascinating.  In general its okay.
+  If you can figure out how to use eg TimeLoop for this project, that would be fascinating.  In general its okay.
 
 * *Does the model need to be valid for all parameters*
   No, that would be really hard!  Do your best to be general, but where you can't be, figure out why.
