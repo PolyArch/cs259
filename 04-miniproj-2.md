@@ -71,6 +71,13 @@ reason about what data fits in the buffer, given the tiling that you performed
 (either implicitly in cache, or explicitly in scratchpad).  This will help you calculate the
 relative bandwidth difference between the cache and memory.
 
+For reference, I am providing a the source code 
+for [yet another loop schedule analyzer (yalsa)](https://github.com/PolyArch/yalsa).
+You do not have to use it, but
+it should serve as a proof of concept for the type of analysis that might be necessary to get
+good accuracy.  
+
+
 ## What to turn in?
 
 For the report, please include the following, along with any supporting graphs or figures:
@@ -106,6 +113,10 @@ Your approach should do better than that.
 lecture -- you can code up this analysis pretty easily.  Then you could search for good
 settings of tiling factors.  Is this the only way to do it .. no, but I don't know if higher-abstraction
 techniques will work as well, maybe?
+
+* *I'm using Deepbench for CUDNN, and sometimes it uses weird algorithms like Winograd, do we have to predict that?*
+
+  No, you don't have to.  You may fix the algorithm which is used in CUDNN to make your life simpler.
 
 * *Can I use regression / ML techniques?*
 
