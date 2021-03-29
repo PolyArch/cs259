@@ -7,25 +7,27 @@ title: Overview
  
 ### About / Contact
 
-* Spring 2020
+* Spring 2021
 * Instructor: Tony Nowatzki  [(cs-page)](http://web.cs.ucla.edu/~tjn)
 * Email: tjn@cs.ucla.edu (include [cs259] in subject line)
 * Course When/Where: Tues/Thurs 2:00pm-3:50pm, Zoom
 * [Zoom Join URL for Class](https://ucla.zoom.us/j/375217378)
-* Office hours: 2:00-3:00pm Wed/Fri (same zoom link as above) -- Please warn me at least 30 minutes before, or I might not join zoom.
+* Office hours: 2:00-3:00pm Monday, 9:00am Wednessday
 
 ### Description
 
-The advancements and overwhelming success of Machine Learning has profoundly affected the future of
-computer architecture. Not only is performing learning on big-data the leading application driver for future
-architectures, but also machine learning techniques can be used to improve hardware efficiency for a wide
-variety of application domains.
+The advancements and overwhelming success of Machine Learning has profoundly
+affected the future of computer architecture. Not only is performing learning
+on big-data the leading application driver for future architectures, but also
+machine learning techniques can be used to improve hardware efficiency for a
+wide variety of application domains.
 
-This course will explore, from a computer architecture perspective, the principles of hardware/software
-codesign for machine learning. One thrust of the course will delve into accelerator, CPU, and GPU enhancements
-for ML algorithms, including parallelization techniques. The other thrust of the course will
-focus on how machine learning can be used to optimize conventional architectures by dynamically learning
-and adapting to program behavior.
+This course will explore, from a computer architecture perspective, the
+principles of hardware/software codesign for machine learning. One thrust of
+the course will delve into accelerator, CPU, and GPU enhancements for ML
+algorithms, including parallelization techniques. The other thrust of the
+course will focus on how machine learning can be used to optimize conventional
+architectures by dynamically learning and adapting to program behavior.
 
 ### Is this a machine learning course?
 
