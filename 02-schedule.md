@@ -3,7 +3,7 @@ layout: page
 title: Reading Schedule
 ---
 
-Link to the [paper reading schedule](https://docs.google.com/document/d/1KOqo3h1Ly7PgW6Fsj0F0TmA-xg2WOIweY6wLP9OkX8o/edit).  
+Link to the [paper reading schedule](https://docs.google.com/document/d/1exgUVCX843lj7EbDo_NZTwRekplsM9QiUk34bsITsTE/edit).  
 
 The schedule partially depends on which papers you select!  You will sign up
 for a slot by highlighting a paper and leaving a comment with your names.  I'd
