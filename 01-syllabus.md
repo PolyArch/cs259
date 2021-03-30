@@ -41,7 +41,7 @@ Also, there are some general goals which hold for any architecture/hardware cour
 Logistically, this course has 4 components.  
 * *Participation: Online forum discussion:* During this course we will read a number of research papers from
   literature.  We will discuss these on the CCLE online forum (if this doesn't work well, we will
-  return to piazza). See the [discussion page]({{site.baseurl}}/04-discussion/) for more instructions.
+  return to piazza). See the [discussion page]({{site.baseurl}}/03-discussion/) for more instructions.
 
 * *Participation: In-class discussion:*  We will also discuss papers in class, and one way you can earn participation
 points is to ask questions or provide your thoughts either audibly, or in the live chat during class.
@@ -60,7 +60,7 @@ points is to ask questions or provide your thoughts either audibly, or in the li
     - Points are calculated as min(forum + participation,100%).  
     - That means you can earn full points by:
       * Participating in every class with at least one thoughtful comment, or
-      * Writing an insighful review for every in-class discussion
+      * Writing an insightful review for every in-class discussion
       * A combination of the above.
 * 15% Mini-projects
     - 7.5% Each
