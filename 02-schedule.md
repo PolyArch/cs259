@@ -10,6 +10,6 @@ for a slot by highlighting a paper and leaving a comment with your names.  I'd
 like you select a paper to lead by April 8th -- please follow the directions on
 the linked google doc.
 
-Link to [google drive folder containing lectures](https://drive.google.com/open?id=16yuNOrtW1pv4-vFHRCb4DPHJaO2bJM7J).
+Link to [google drive folder containing lectures](https://drive.google.com/drive/folders/11DT75MSbbRd3HNKoofjOFU6YiCw1SvHd?usp=sharing).
 
 
