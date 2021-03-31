@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Discussions
+title: Forum Discussions
 ---
 
 Students are expected to have completed the assigned readings before class and
@@ -25,7 +25,9 @@ be to respond to other peoples questions, without having to write your own top-l
 * Write a thoughtful question about the design or algorithm.
 * Describe ways that this work could contribute to future work, or open interesting future questions.
 
-#### Length: 
+## FAQ
+
+#### Length?
 I would say try for two paragraphs or so.  Maybe ~8-10 sentences, or more if you feel its valuable.
 
 #### When is it due? 
@@ -41,8 +43,12 @@ still must be done before class.
  No problem, you may skip 2 discussions without penalty, and I will
 take only your highest scores.
 
+#### Do I need to participate in both papers if there are two in one day?
 
+No, you only need to participate in one paper.
 
+#### Do I need to participate in the discussion if I'm presenting that day?
 
+Instead, you should present a few discussion questions / discussion topics for your paper.  Each presenter should contribute at least one question.
 
 
