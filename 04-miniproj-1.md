@@ -6,11 +6,11 @@ title: Mini-project 1
 ### Summary: 
 The goal of the assignment is to get some experience working with data-parallel hardware and programming models, as well as the basic parallelization/locality aspects of deep neural network computations.   
 
-Due: April 24th, 11:55pm
+Due: April 23rd, 11:59pm
 
-Can you work in groups: Yes -- Preferably groups of two.  
+I recommend doing this assignment in groups of 2 (pair programming can work well), but 3 or 1 is okay too.  
 
-(If you really want to work in a group of three and have a way to make sure everyone learns, send me a note to get special permission.)
+You'll use CCLE groups feature to turn in your assignment into CCLE.
 
 ### Getting Started:
 
@@ -39,20 +39,30 @@ You can run “deviceQuery” in the cuda samples under 1_Utilities to figure ou
 NVIDIA_CUDA-10.1_Samples/1_Utilities/deviceQuery/deviceQuery
 ```
 
-### Task:  
-Implement and evaluate a CUDA version of a ``classifier'' (fully connected, ie. matrix-vector multiply) and 3D convolution kernel, with parameters from VGG:
+### Tutorials:
 
-* Conv1: Nx=224 Ny=224 Kx=3  Ky=3  Ni=64   Nn=64 
-* Conv2: Nx=14 Ny=14     Kx=3  Ky=3  Ni=512 Nn=512
+This is a [good practice tutorial to start
+with](https://developer.nvidia.com/blog/even-easier-introduction-cuda/), and it
+also has links to a number of other useful tutorials.
+
+The official [programming guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) 
+is useful for in-depth explanations of all the features.
+
+### Task:  
+Implement and evaluate a CUDA version of a fully connected layer (ie. matrix-vector multiply) and 3D convolution kernel, with parameters from VGG:
+
+* Conv1:  Nx=224 Ny=224 Kx=3  Ky=3  Ni=64   Nn=64 
+* Conv2:  Nx=14  Ny=14  Kx=3  Ky=3  Ni=512 Nn=512
 * Class1: Ni=25088 Nn=4096
 * Class2: Ni=4096 Nn=1024
+
+Please try for two different batch sizes; batch size = 1, and batch size = 16.  (Batch size 16 can be trivially implemented by executing batch size 1 several times, but you may not get the best performance doing that.)
 
 A possible starting point are the kernels the [fp-diannao repo](https://github.com/PolyArch/fp-diannao), which are simple CPU implementations based on the DianNao data-layouts (but with fp datatypes).
 
 You may do the following:
-* Modify the batch size (the fp-diannao repo only has batch size of 1... which is the most challenging for the GPU)
 * Change the data layout
-* Use any feature of the GPU you like (shared memory! tensor cores?)
+* Use any feature of the GPU you like (shared memory, tensor cores)
 * Parallelize using any strategy  (across batches or across/within feature maps)
 * If you would prefer to use fp16/int16, that's fine too...
 
@@ -88,12 +98,6 @@ You may do the following:
     
 5. What optimizations did you find most useful/least useful?
 
-6. Paste the cuda kernel in the doc. Don't worry if it's too long or ugly.
+6. Turn in the cuda kernel as an attachment in the submission.
 
-### How to turn in: 
-
-I will make an assignment on CCLE where you should turn your report.  You won't
-be graded on performance as long as you tried some optimizations and have good explanations.
-
-On the other hand, we will announce some winners in various categories. : )
 
