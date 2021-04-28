@@ -30,7 +30,7 @@ to predict performance of accelerator hardware.
 The only requirements for this assignment are to 
   1. Provide a model of some accelerator (GPU or other hardware), 
   2. Provide some validation of that model (either measurement 
-     or a real sytsem, simulation, or by analyzing published data).
+     or a real system, simulation, or by analyzing published data).
   3. Your should try for a model that is better than the
       roofline model (bandwidth bound/compute bound).  
   4.  Your report should explain any insights learned from the modeling experience.  
@@ -45,8 +45,8 @@ some degree).  The default project is to model CUDNN on the TitanV GPU, for
 some set of convolution or matrix-multiply kernels.  Alternative projects could
 be to model other kernels on the GPU, or accelerators from the literature.  
 You may also model *your own* CUDA implementations, if they are fast enough to
-be interesting.  Alternatives will be discussed later.
-
+be interesting. 
+ 
 Models come in many forms, from mechanistic/analytical models to regression based models.
 By default, I suggest building mechanistic model.  The advantages are 1. no prior statistics
 background is required, and 2. the model can tell you something about the underlying
@@ -94,7 +94,7 @@ with loop scheduling order etc. It is basically a
  proof of concept for the type of analysis that might be necessary to get
 good accuracy.  
 
-Another option is to use exisitng tools like TimeLoop and MAERI.  I'm not sure
+Another option is to use existing tools like TimeLoop and MAERI.  I'm not sure
 how well they will work for GPUs, but feel free to experiment!
 
 ## What to turn in?
@@ -133,10 +133,10 @@ should explain why your performance is not reaching the peak.
 HOWEVER: I would caution that you should only do this if your kernel
 implementations are pretty good -- perhaps within 10x of min(CUDNN,roofline).
 If your kernel performance is very low, there's a danger 
-that eitehr 1. you are hitting some difficult-to-model bottleneck
-(eg. your data-layout is not great, causing many oustanding memory requests), 
+that either 1. you are hitting some difficult-to-model bottleneck
+(eg. your data-layout is not great, causing many outstanding memory requests), 
 or 2. it will be too easy because the performance is low
-and doesn't scale in an interesting way.  Feel free to use your discression.
+and doesn't scale in an interesting way.  Feel free to use your discretion.
 
 * *Do we need to think about loop scheduling and tiling?*
 
@@ -150,7 +150,7 @@ possible factors to find good settings.
 * *I'm using Deepbench for CUDNN, and sometimes it uses weird algorithms like 
 Winograd, do we have to predict that?*
 
-  No, you don't have to.  You may fix the algorithm which is used in CUDNN -- I suggest using GEMM.
+  No, you don't have to.  I suggest forcing the algorithm which is used in CUDNN to be GEMM.
 
 * *Can I use regression / ML techniques?*
 
@@ -176,6 +176,6 @@ but where you can't be, figure out why.
 Sure, that's not a bad idea!
 
 * *Can I model DianNao for this project?*
-No, since we more or less did this in class, and YALSA already povides some sort of model.
+No, since we more or less did this in class, and YALSA already provides some sort of model.
  
 
