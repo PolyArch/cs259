@@ -8,7 +8,7 @@ The goal of the assignment is to get some experience working with data-parallel 
 
 Due: April 23rd, 11:59pm
 
-I recommend doing this assignment in groups of 2 (pair programming can work well), but 3 or 1 is okay too.  
+I recommend doing this assignment in groups of 2 (pair programming can work well), but 3 or 1 is okay as well.  
 
 You'll use CCLE groups feature to turn in your assignment into CCLE.
 
