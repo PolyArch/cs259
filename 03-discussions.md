@@ -14,9 +14,11 @@ The goal of the pre-class forum discussions is to bring up meaningful questions 
 insights for the presenter, and to prime the class to be thinking critically
 about the work. 
 
-There are no strict format requirements for contributions to the forum. You may do a traditional review if you like,
-or you may simply highlight what you thought was interesting or pose a few questions.  Your contribution can even
-be to respond to other peoples questions, without having to write your own top-level post first.
+There are no strict format requirements for contributions to the forum. You may
+do a traditional review if you like, or you may simply highlight what you
+thought was interesting or pose a few questions.  Your contribution can even be
+to respond to other peoples questions, without having to write your own
+top-level post first.
 
 #### Examples of things you can write about:
 * Summarize the main intellectual contributions of the paper.
