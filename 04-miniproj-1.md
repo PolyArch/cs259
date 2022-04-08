@@ -6,18 +6,16 @@ title: Mini-project 1
 ### Summary: 
 The goal of the assignment is to get some experience working with data-parallel hardware and programming models, as well as the basic parallelization/locality aspects of deep neural network computations.   
 
-Due: April 23rd, 11:59pm
+Due: April 22rd, 11:59pm
 
 I recommend doing this assignment in groups of 2 (pair programming can work well), but 3 or 1 is okay as well.  
 
-You'll use CCLE groups feature to turn in your assignment into CCLE.
+You'll use Canvas's groups feature to turn in your assignment into Canvas.  
 
 ### Getting Started:
 
-Follow the setup guide [here]({{site.baseurl}}/09-resources/) to get an account
-on tetracosa.cs.ucla.edu.  Please make sure not to put any files in
-your home folders, as there is limited space there.  Instead use the eda drive 
-(specifically  /usr/eda/cs259/[your\_name], as the resource page instructs).
+You should have gotten an email for setting up an account
+on tetracosa.cs.ucla.edu. Please don't use more than 50GB, or we will run out of space! 
 
 After setting up, you may want to look at some samples from NVIDIA; these can be setup by running:
 
@@ -38,6 +36,8 @@ You can run “deviceQuery” in the cuda samples under 1_Utilities to figure ou
 ```
 NVIDIA_CUDA-10.1_Samples/1_Utilities/deviceQuery/deviceQuery
 ```
+
+In general, I recommend using the installed 10.1 version of cuda.  You may want to put "/usr/local/cuda-10.1/bin" in your PATH.
 
 ### Tutorials:
 
@@ -62,7 +62,7 @@ A possible starting point are the kernels the [fp-diannao repo](https://github.c
 
 You may do the following:
 * Change the data layout
-* Use any feature of the GPU you like (shared memory, tensor cores)
+* Use any feature of the GPU you like (shared memory, tensor cores, inter-warp reductions)
 * Parallelize using any strategy  (across batches or across/within feature maps)
 * If you would prefer to use fp16/int16, that's fine too...
 
@@ -98,6 +98,6 @@ You may do the following:
     
 5. What optimizations did you find most useful/least useful?
 
-6. Turn in the cuda kernel as an attachment in the submission.
+6. Turn in the cuda kernel as an attachment in the submission.  Don't zip everything together though, make sure source and PDF are turned in separately.
 
 
