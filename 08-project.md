@@ -67,8 +67,8 @@ create an interesting problem:
   could be chosen.  Simple FC/CNN layers are acceptable, but to make things
 more interesting compared to what we've focused on in class, you could also
 consider specializing to different networks like
-[LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/), or
-[transformer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)/[BERT](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270).
+[LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/),
+[transformer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)/[BERT](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270), [graph networks](https://distill.pub/2021/gnn-intro/), etc.
 Going in a completely different direction are other classic ML algorithms
 [(top 5 facebook algos)](https://ieeexplore.ieee.org/abstract/document/8327042) 
 like GBDT, SVM, LR.
@@ -102,7 +102,7 @@ we discuss in class.
 
 * These tools require enormous amounts of time to exhaustively search the space of 
 transformations to find best one. Propose a technique (perhaps a heuristic technique) to 
-search the space more quickly.
+search the space more quickly. (Use ML model as cost-model -- ML for ML anyone?)
 
 * Add the ability to automatically search over hardware features under certain area/power/performance
  constraints.

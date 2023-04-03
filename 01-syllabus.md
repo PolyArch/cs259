@@ -5,7 +5,7 @@ title: Syllabus
 
 ### Learning Machines
 * Instructor: Tony Nowatzki
-* Term: Spring 2022
+* Term: Spring 2023
 * Textbook: None! 
 * Find Zoom URL in Canvas : )
 
@@ -47,7 +47,7 @@ points is to ask questions or provide your thoughts either audibly, or in the li
  Remember, this class will be fun and interesting if you make it so!
 
 * *Mini-Projects:* There will be two mini projects which can also be performed in groups:
-  - Parallelizing a machine learning kernel using CUDA on our V100 GPU. 
+  - Parallelizing a machine learning kernel using CUDA on our Titan-V GPU. (or your own)
   - Build a ML-accelerator simulator, which is correct and produces accurate performance estimates.
 
 * *Leading Class Discussion:* Each student group (1-3 students?) will lead 1 lecture/discussion
