@@ -194,7 +194,8 @@ how simple/regular they are.  What's bizarre though, is that if some
 error can be tolerated, they can be even sometimes be
 more efficient than an existing *exact* algorithm!
 
-The NPU paper (which we’ll discuss) developed an accelerator which is
+The [NPU paper](https://homes.cs.washington.edu/~luisceze/publications/micro12-web.pdf) 
+developed an accelerator which is
 integrated with a CPU which computes approximate versions of general functions
 using neural networks.  They showed that a fully-connected NN-approximated
 code, running on their accelerator, is actually faster than precise
