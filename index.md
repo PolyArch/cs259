@@ -10,7 +10,7 @@ title: Overview
 * Spring 2023
 * Instructor: Tony Nowatzki  [(cs-page)](http://web.cs.ucla.edu/~tjn)
 * Email: tjn@cs.ucla.edu (include [cs259] in subject line)
-* Office hours: 3:30-4:30pm Monday, 9:00am Thursday
+* Office hours: 3:30-4:30pm Monday, 9:00am Thursday -- Eng. 6, 468b
 
 ### Description
 
