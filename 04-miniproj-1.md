@@ -51,8 +51,8 @@ The official [programming guide](https://docs.nvidia.com/cuda/cuda-c-programming
 is useful for in-depth explanations of all the features.
 
 ### Task:  
-Implement and evaluate a CUDA version of a 3D convolution kernel
-and "classifier" (i.e. a fully connected layer / matrix-vector multiply).  Use
+Implement and evaluate a CUDA version of "Conv2D" convolution kernel (which is a 2D convolution + extended in the channel dimension)
+kernel) and "classifier" (i.e. a fully connected layer / matrix-vector multiply).  Use
 these parameters from VGG:
 
 * Conv1:  Nx=224 Ny=224 Kx=3  Ky=3  Ni=64   Nn=64  (stride=1)
@@ -61,7 +61,7 @@ these parameters from VGG:
 * Class2: Ni=4096 Nn=1024
 
 Param Definitions:
-* Ni/Nn -- Number of input/output channels
+* Ni/Nn -- Number of input/output channels/feature-maps
 * Nx/Ny -- Image/feature-map width/height
 * Kx/Ky -- Kernel size
 
