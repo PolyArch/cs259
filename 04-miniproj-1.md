@@ -11,7 +11,7 @@ aspects of deep neural network computations.
 
 Due: April 26th, 11:59pm
 
-The recommended group size is 2 (pair programming can work well). You'll use Canvas's groups feature to turn in your assignment into Canvas.  
+The recommended group size is 2 (pair programming can work well), but you can work in groups of 1-4. You'll use Canvas's groups feature to turn in your assignment into Canvas.  
 
 ### Getting Started:
 
@@ -88,7 +88,7 @@ You may do the following:
     For this, you can/should measure different bandwidths using nvprof.  Eg:
   
     ```
-    /usr/local/cuda-10.1/bin/nvprof -m dram_read_throughput ./vectorAdd
+    nvprof -m dram_read_throughput ./vectorAdd
     ```
   
     A good description of other b/w measurements is here:
