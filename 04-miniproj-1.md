@@ -9,7 +9,7 @@ The goal of the assignment is to get some experience working with data-parallel
 hardware and programming models, as well as the basic parallelization/locality
 aspects of deep neural network computations.   
 
-Due: April 26th, 11:59pm
+Due: April 28th, EOD
 
 The recommended group size is 2 (pair programming can work well), but you can work in groups of 1-4. You'll use Canvas's groups feature to turn in your assignment into Canvas.  
 
