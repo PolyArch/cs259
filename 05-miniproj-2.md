@@ -64,22 +64,22 @@ degree the "peak" memory bandwidth can be obtained on a particular workload.
 
 ### Model inputs and outputs
 
-The input interface of the model should be quite simple.  At a minimum, your model should take as inputs:
+**Inputs**: The input interface of the model should be quite simple.  At a minimum, your model should take as inputs:
 * Problem Sizes (# input channels, filter sizes, etc.)
 * Tile Parameters
 
 To be clear, what I mean by tile parameters is the parameters that determine 
 1. how the work is distributed across cores (GPU SMs), and 
-2. how sub-volumes of tensors are stored in local memories.  For example, you might have
-tile parameters that determine how to split the height/width/input-channels/output-channels to
-GPU cores.  Those same parameters might be used to determine what data is stored in scratchpad, etc.
+2. how sub-volumes of tensors are stored in local memories.  
 
-As for the output, please compute:
+For example, you might have tile parameters that determine how to split the height/width/input-channels/output-channels to GPU cores.  Those same parameters might be used to determine what data is stored in scratchpad, etc.
+
+**Outputs:** As for the output, please compute:
 * Tera Operations per second (TOps)
 * Achieved Operation Intensity -- i.e. ops / byte -- at each level of the memory hierarchy that you get reuse in.
 * Is tile size valid? (e.g. false if tile exceeds scratchpad, if you are using scratchpad)
  
-I also urge you to use parameters for your model that have meaning:
+**Parameters:**I also urge you to use parameters for your model that have meaning:
 The model should take as input some hardware specific inputs, including whatever you deem to be important.  E.g.:
 * Bandwidth from memory, l2, l1 cache/scratchpad
 * L1/L2/SPAD Capacities 
