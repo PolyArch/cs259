@@ -151,8 +151,8 @@ any challenges faced, and how you addressed them (or would address them).  If yo
 contains arbitrary constants, please explain why they exist or what they might mean.
 
 * Validation:  For validation, explain the set of kernel parameters you used to validate your model.
-Then present an analysis that shows the error across some range of kernels.  Explain what parameter
-settings the model performs well or poorly on. 
+Then present an analysis that shows the error across some range of kernels.  Compare this 
+to the roofline model.  Explain what parameter settings the model performs well or poorly on. 
 
 * Architecture Insight: Based on your model, which hardware parameters should future GPUs change if they
 want to perform better on your implementation of convolution? To answer this question,
