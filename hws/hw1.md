@@ -67,7 +67,7 @@ parameters, you can assume the default configuration is:
    (for fun, try ```mm``` with ```-O2 -ffast-math -ftree-vectorize``` -- what happens??)
 
 3. Vary the Clock frequency
-   Vary the CPU clock from 1 GHz to 4 GHz. 
+   Vary the CPU clock from 1 GHz to 4 GHz. (1,2,4)
 
    (note that changing the frequency doesn't affect gem5's pipeline depth, or any other microarchitecture aspect)
 
@@ -80,7 +80,7 @@ parameters, you can assume the default configuration is:
    Try turning off the l2 cache.
 
 ### Note: 
-You should end up with 4 * 7 = 28 gem5 runs. Each run takes approximately 1 minute on the datasets given, so this should be about 1/2 hour of runtime if fully scripted.
+You should end up with 4 * 8 = 32 gem5 runs. Each run takes approximately 1 minute on the datasets given, so this should be about 1/2 hour of runtime if fully scripted.
 
 ## Step 3: Analysis
 After collecting all of the data from the previous step, analyze the statistics, and answer the following questions.
