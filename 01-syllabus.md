@@ -5,9 +5,8 @@ title: Syllabus
 
 ### Learning Machines
 * Instructor: Tony Nowatzki
-* Term: Spring 2023
+* Term: Spring 2025
 * Textbook: None! 
-* Find Zoom URL in Canvas : )
 
 ### Course Objectives
 
@@ -55,12 +54,12 @@ points is to ask questions or provide your thoughts either audibly, or in the li
 * *Project:*  Group based research/implementation project with 1-4 students. Please see the project handout, and feel free to use Piazza to help form groups. You will need to propose a project by the beginning of the 5th week of class, so please start thinking early. See [project]({{site.baseurl}}/08-project/) page for more details.
 
 ## Grade Breakdown
-* 25% Discussion
+* 20% Discussion
     - Most students earn full points by participating meaningfully in each online forum discussion
     - I will award bonus points for consistent participation in in-class discussions
       * If you participate in *every* in-class discusison, that is also worth full discussion points
 * 15% Mini-projects
     - 7.5% Each
-* 20% Leading Class Discussion
+* 25% Leading Class Discussion
 * 40% Project
 
