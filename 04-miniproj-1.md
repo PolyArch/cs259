@@ -24,7 +24,7 @@ After setting up, you may want to look at some samples from NVIDIA; these can be
 git clone https://github.com/nvidia/cuda-samples
 cd cuda-samples
 git checkout cd3bc1fa8e949ca016c6396c47124fdcfd75fb4b
-make -j24//developer.nvidia.com/blog/even-easier-introduction-cuda/
+make -j24
 ```
 
 Also, make sure "/usr/local/cuda/bin" is in your PATH environment variable.
