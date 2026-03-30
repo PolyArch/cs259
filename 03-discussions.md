@@ -6,7 +6,7 @@ title: Forum Discussions
 Students are expected to have completed the assigned readings before class and
 participate in discussions.  As stated in the syllabus, you may either
 fulfill this requirement by writing thoughtful posts in the forum,
-by speakign up in class, or some combination of both.
+by speaking up in class, or some combination of both.
 
 ## Forum Post Guidelines:
 

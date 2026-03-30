@@ -11,7 +11,11 @@ topic would ideally be selected/proposed by week 5.
 * Due Date: June 13th, Midnight
 * Subject:  If it has a relationship to ML & hardware, its acceptable!
 * Work in teams: Yes, 1-4 Students (preferrably 2-3)
-* Deliverables: Project Report + Source Code tarball (will not distribute)
+* Deliverables: Project Report + Source Code tarball (will not distribute) + Lightning Presentation
+
+## Grade Breakdown (of project grade)
+* 90% Project Report + Source Code
+* 10% Lightning Presentation: A 5-minute in-class presentation where you summarize your project, key ideas, and findings.
 
 ## Project Content
 
