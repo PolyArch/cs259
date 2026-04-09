@@ -42,7 +42,23 @@ make -j24
 
 ## Task
 
-Implement CUDA kernels for the following two workloads.
+Implement CUDA kernels for the following two workloads. For each, start with a
+naive implementation that gets correct results, then iteratively apply optimizations
+and measure the impact of each. Example optimizations to consider:
+
+- **Tiling / shared memory**: load a tile of inputs or weights into shared memory
+  so threads in a block can reuse them without repeated DRAM accesses
+- **Register blocking**: accumulate partial sums in registers across multiple output
+  elements to increase arithmetic intensity
+- **Memory coalescing**: restructure the data layout or access pattern so that
+  adjacent threads read adjacent memory addresses
+- **Warp-level primitives**: use `__shfl_sync` for reductions within a warp without
+  going through shared memory
+- **Increased occupancy**: tune block size and register usage to keep more warps
+  resident on each SM
+
+You don't need to try all of these — pick what seems promising for your kernel and
+explain what you tried and why.
 
 ### Part 1 — Convolution
 
