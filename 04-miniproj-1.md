@@ -87,7 +87,7 @@ reference in that case.
 
 A CPU reference implementation for both kernels is provided at
 [github.com/PolyArch/cs259-miniproj-ref](https://github.com/PolyArch/cs259-miniproj-ref).
-Clone it, build, and run to see expected outputs and get familiar with the data layouts:
+Clone it, build, and run to see expected outputs:
 
 ```bash
 git clone git@github.com:PolyArch/cs259-miniproj-ref.git
