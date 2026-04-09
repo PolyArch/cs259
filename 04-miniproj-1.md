@@ -110,9 +110,6 @@ ncu ./my_program
 
 # Profile only a specific kernel by name
 ncu --kernel-name my_kernel_name ./my_program
-
-# Limit to the first N launches of a kernel (useful if you run many iterations)
-ncu --launch-count 1 --kernel-name my_kernel_name ./my_program
 ```
 
 ### Useful metric sets
