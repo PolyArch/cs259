@@ -174,14 +174,9 @@ determine which resource is the bottleneck.
 
 ## Questions
 
-Answer the following questions for all six configurations:
-
-- **Conv1** — 224×224, Ni=Nn=64, at your chosen batch size
-- **Conv2** — 14×14, Ni=Nn=512, at your chosen batch size
-- **Prefill S=4096**
-- **Prefill S=65536**
-- **Decode C=4096**
-- **Decode C=65536**
+Present data for all 6 workloads (Conv1, Conv2, prefill S=4096, prefill S=65536,
+decode C=4096, decode C=65536). Answer the questions for each kernel type you
+implemented — discussing how behavior differs across the configurations within it.
 
 ### 1. Parallelization Strategy
 
