@@ -62,9 +62,6 @@ The data layout used in the reference implementation is:
 - Input:   `[B][NYPAD][NXPAD][Ni]` (zero-padded)
 - Output:  `[B][NYSCL][NXSCL][Nn]`
 
-You are free to change the data layout, use any CUDA features (shared memory, tensor
-cores, warp-level intrinsics), or restructure the computation.
-
 ### Part 2 — Attention
 
 Implement CUDA kernels for single-head attention with head dimension D=64. This
@@ -82,6 +79,9 @@ The reference implementation provides `standard_prefill`, `flash_prefill`, and
 kernel. Note that for the larger context size (S=65536), standard attention may not
 fit in GPU memory — the provided flash attention implementation may serve as a useful
 reference in that case.
+
+For both kernels, you are free to change the data layout, use any CUDA features
+(shared memory, tensor cores, warp-level intrinsics), or restructure the computation.
 
 ### Reference Implementation
 
