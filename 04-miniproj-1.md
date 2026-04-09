@@ -141,7 +141,7 @@ ncu --set full ./my_program
 ```
 
 For more targeted queries, you can pass individual metrics with `--metrics`.
-The most useful ones for this assignment:
+Some useful ones:
 
 | Metric | What it measures |
 |--------|-----------------|
