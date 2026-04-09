@@ -120,26 +120,27 @@ ncu --kernel-name my_kernel_name ./my_program
 
 ```bash
 # Full default report (good starting point -- covers compute, memory, occupancy)
+# Also generates a roofline chart when opened in ncu-ui
 ncu --set full ./my_program
+```
 
-# Memory throughput: how hard you are hitting DRAM vs L2 vs L1
-ncu --metrics \
-  l1tex__t_bytes_pipe_lsu_mem_global_op_ld.sum,\
-  l1tex__t_bytes_pipe_lsu_mem_global_op_st.sum,\
-  lts__t_bytes_equiv_l1sectormiss_pipe_lsu_mem_global_op_ld.sum,\
-  dram__bytes_read.sum,\
-  dram__bytes_write.sum \
-  ./my_program
+For more targeted queries, you can pass individual metrics with `--metrics`.
+The most useful ones for this assignment:
 
-# Achieved memory bandwidth (GB/s) and compute throughput (TFLOPS)
-ncu --metrics \
-  sm__throughput.avg.pct_of_peak_sustained_elapsed,\
-  gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed \
-  ./my_program
+| Metric | What it measures |
+|--------|-----------------|
+| `dram__bytes_read.sum` | Total bytes read from DRAM (HBM) for the kernel |
+| `dram__bytes_write.sum` | Total bytes written to DRAM (HBM) for the kernel |
+| `l1tex__t_bytes_pipe_lsu_mem_global_op_ld.sum` | Bytes requested from L1 for global loads (before the cache) |
+| `lts__t_bytes_equiv_l1sectormiss_pipe_lsu_mem_global_op_ld.sum` | Bytes that missed L1 and went to L2 |
+| `sm__throughput.avg.pct_of_peak_sustained_elapsed` | Overall SM utilization as % of peak |
+| `gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed` | DRAM bandwidth utilization as % of peak |
+| `sm__warps_active.avg.pct_of_peak_sustained_active` | Occupancy: active warps as % of the SM maximum |
+| `smsp__sass_thread_inst_executed_op_ffma_pred_on.sum` | FP32 fused multiply-add instructions executed (1 FMA = 2 FLOPs) |
 
-# Occupancy: how many warps are active vs the maximum
-ncu --metrics \
-  sm__warps_active.avg.pct_of_peak_sustained_active \
+Example:
+```bash
+ncu --metrics dram__bytes_read.sum,dram__bytes_write.sum,smsp__sass_thread_inst_executed_op_ffma_pred_on.sum \
   ./my_program
 ```
 
@@ -157,7 +158,14 @@ ncu-ui my_report.ncu-rep
 A full list of available metrics and what they measure is in the
 [Nsight Compute Kernel Profiling Guide](https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-reference).
 
-### Interpreting the output for roofline analysis
+### Roofline analysis
+
+The roofline model plots achieved performance (GFLOPS) against arithmetic intensity
+(FLOPs/byte), with a diagonal memory-bandwidth ceiling and a horizontal compute
+ceiling. A kernel below the diagonal is memory-bound; above it, compute-bound.
+For a primer, see [this NVIDIA blog post](https://developer.nvidia.com/blog/roofline-and-empirical-roofline-toolkit/)
+or the [Nsight Compute roofline documentation](https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#roofline)
+(note: `ncu --set full` generates a roofline chart automatically when opened in ncu-ui).
 
 The two numbers most useful for placing your kernel on the roofline are:
 
