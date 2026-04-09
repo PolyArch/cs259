@@ -48,8 +48,6 @@ and measure the impact of each. Example optimizations to consider:
 
 - **Tiling / shared memory**: load a tile of inputs or weights into shared memory
   so threads in a block can reuse them without repeated DRAM accesses
-- **Register blocking**: accumulate partial sums in registers across multiple output
-  elements to increase arithmetic intensity
 - **Memory coalescing**: restructure the data layout or access pattern so that
   adjacent threads read adjacent memory addresses
 - **Warp-level primitives**: use `__shfl_sync` for reductions within a warp without
