@@ -21,17 +21,6 @@ where they fall on the roofline model.
 You should have received an email with account access to the course GPU machine.
 Make sure `/usr/local/cuda/bin` is in your `PATH`.
 
-A CPU reference implementation for both kernels is provided in a separate repository.
-Clone it, build, and run to see expected outputs and get familiar with the data layouts:
-
-```bash
-git clone git@github.com:PolyArch/cs259-miniproj-ref.git
-cd cs259-miniproj-ref
-make
-./conv
-./attention
-```
-
 For an introduction to CUDA, this is a good starting point:  
 https://developer.nvidia.com/blog/even-easier-introduction-cuda/
 
@@ -89,6 +78,20 @@ The reference implementation provides `standard_prefill`, `flash_prefill`, and
 kernel. Note that for the larger context size (S=65536), standard attention may not
 fit in GPU memory — the provided flash attention implementation may serve as a useful
 reference in that case.
+
+### Reference Implementation
+
+A CPU reference implementation for both kernels is provided at
+[github.com/PolyArch/cs259-miniproj-ref](https://github.com/PolyArch/cs259-miniproj-ref).
+Clone it, build, and run to see expected outputs and get familiar with the data layouts:
+
+```bash
+git clone git@github.com:PolyArch/cs259-miniproj-ref.git
+cd cs259-miniproj-ref
+make
+./conv
+./attention
+```
 
 ---
 
