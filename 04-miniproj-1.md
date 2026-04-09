@@ -149,7 +149,7 @@ ncu --metrics \
 # Save a report to a file
 ncu --set full -o my_report ./my_program
 
-# Copy the report to your laptop and open in the Nsight Compute GUI
+# Copy the report to your local machine and open in the Nsight Compute GUI
 # Download: https://developer.nvidia.com/tools-overview/nsight-compute/get-started
 ncu-ui my_report.ncu-rep
 ```
