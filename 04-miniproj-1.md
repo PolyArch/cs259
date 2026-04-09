@@ -48,10 +48,14 @@ Implement CUDA kernels for the following two workloads.
 
 Implement a CUDA kernel for direct 2D convolution with the following VGG configurations:
 
-| Layer | Ny × Nx | Ky × Kx | Ni  | Nn  | Stride | Batch |
-|-------|---------|---------|-----|-----|--------|-------|
-| Conv1 | 224×224 | 3×3     | 64  | 64  | 1      | 1, 16 |
-| Conv2 | 14×14   | 3×3     | 512 | 512 | 1      | 1, 16 |
+| Layer | Ny × Nx | Ky × Kx | Ni  | Nn  | Stride |
+|-------|---------|---------|-----|-----|--------|
+| Conv1 | 224×224 | 3×3     | 64  | 64  | 1      |
+| Conv2 | 14×14   | 3×3     | 512 | 512 | 1      |
+
+Pick either batch size 1 or batch size 16 and use it consistently. Batch 16 tends to
+be easier to get high utilization from (better weight reuse), but batch 1 is a more
+realistic inference scenario.
 
 The data layout used in the reference implementation is:
 - Weights: `[Ky][Kx][Nn][Ni]`
