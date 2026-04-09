@@ -19,7 +19,9 @@ where they fall on the roofline model.
 ## Getting Started
 
 You should have received an email with account access to the course GPU machine.
-Make sure `/usr/local/cuda/bin` is in your `PATH`.
+Make sure `/usr/local/cuda/bin` is in your `PATH`. You are also welcome to use any
+other GPU you have access to — a personal machine, Google Colab, or a cloud instance
+all work fine.
 
 For an introduction to CUDA, this is a good starting point:  
 https://developer.nvidia.com/blog/even-easier-introduction-cuda/
