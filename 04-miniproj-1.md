@@ -203,14 +203,16 @@ GFLOPS (using your algorithmic FLOP count from Q2)?
 
 Plot your results on the roofline model for your GPU. For each kernel configuration:
 
-- Estimate the arithmetic intensity (FLOPs / bytes transferred to/from DRAM)
-- Identify whether the kernel is compute-bound or memory-bandwidth-bound
-- Mark where it falls on the roofline
+- Compute the theoretical arithmetic intensity (algorithmic FLOPs / minimum bytes
+  required to read inputs and write outputs once)
+- Measure the actual DRAM traffic using `ncu` (`dram__bytes_read.sum`,
+  `dram__bytes_write.sum`) and compute the achieved arithmetic intensity from that
+- Place both on the roofline and identify whether the kernel is compute-bound or
+  memory-bandwidth-bound
 
-Use `ncu` to measure actual DRAM traffic rather than estimating from the algorithm
-alone — real hardware behavior (caching, padding, reuse) can differ significantly
-from the theoretical minimum. What does your roofline placement tell you about the
-potential for further optimization?
+How do the theoretical and measured arithmetic intensities compare? What does the
+difference tell you, and what does your roofline placement say about the potential
+for further optimization?
 
 ### 5. Optimizations
 
