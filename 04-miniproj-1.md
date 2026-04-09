@@ -56,7 +56,8 @@ and measure the impact of each. Example optimizations to consider:
   resident on each SM
 
 You don't need to try all of these — pick what seems promising for your kernel and
-explain what you tried and why.
+explain what you tried and why. You are not graded on how fast your kernel is, but
+squeezing out higher utilization is its own reward.
 
 ### Part 1 — Convolution
 
