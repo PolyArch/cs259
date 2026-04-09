@@ -153,6 +153,9 @@ ncu --set full -o my_report ./my_program
 ncu-ui my_report.ncu-rep
 ```
 
+A full list of available metrics and what they measure is in the
+[Nsight Compute Kernel Profiling Guide](https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-reference).
+
 ### Interpreting the output for roofline analysis
 
 The two numbers most useful for placing your kernel on the roofline are:
