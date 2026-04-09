@@ -54,8 +54,8 @@ Implement a CUDA kernel for direct 2D convolution with the following VGG configu
 | Conv2 | 14×14   | 3×3     | 512 | 512 | 1      |
 
 Pick either batch size 1 or batch size 16 and use it consistently. Batch 16 tends to
-be easier to get high utilization from (better weight reuse), but batch 1 is a more
-realistic inference scenario.
+be easier to get high utilization from (better weight reuse), but batch 1 is simpler
+and can be more representative of inference scenarios.
 
 The data layout used in the reference implementation is:
 - Weights: `[Ky][Kx][Nn][Ni]`
