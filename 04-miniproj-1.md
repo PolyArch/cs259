@@ -1,4 +1,7 @@
-# CS 259 Mini-Project 1: GPU Kernel Optimization
+---
+layout: page
+title: Mini-project 1
+---
 
 **Due:** April 28th, EOD  
 **Group size:** 1–4 (recommended: 2)
