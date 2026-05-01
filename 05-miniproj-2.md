@@ -126,6 +126,14 @@ After that, consider capturing other sorts of microarchitectural behavior, possi
 * scratchpad load time
 * effect of memory/l2 latency (e.g. if you don't have many threads on an SM)
 
+For attention specifically, a few things are worth considering if you want a more complete model:
+* Prefill and decode have very different characteristics — prefill tends to be compute-bound at long
+  sequence lengths while decode is memory-bandwidth-bound. You may find it worthwhile to model them
+  separately, or at least understand why the roofline placement differs between them.
+* If you implemented flash attention, the block size used to tile the QK computation is a natural
+  first-class tile parameter. Sweeping it is a good way to validate whether your model captures the
+  memory hierarchy correctly.
+
 All of that said, don't worry about having a complex model.  Your goal is to create a model with
 just enough complexity to have good accuracy.
 
@@ -137,7 +145,15 @@ Your report should demonstrate robustness of your model for at least a few diffe
 dimensions. For convolution, try different combinations for tile height, width, input channels, output channels.
 For attention, vary sequence/context length and tile sizes used for blocking the QK computation.
 
-You may use the validation metric of your choice, e.g. mean absolute percentage error. 
+At minimum, validate against the configurations from mini-proj 1 (e.g. Conv1, Conv2, or the prefill/decode
+sizes S/C = 4096 and 65536). These give a natural baseline since you already have measured runtimes for them.
+
+Beyond just matching end-to-end runtime, consider using `ncu` metrics to validate intermediate model
+quantities — for example, comparing your predicted DRAM traffic against the measured
+`dram__bytes_read.sum` / `dram__bytes_write.sum`, or your predicted compute against measured FMA counts.
+This can help you identify exactly where your model is wrong, not just that it is wrong.
+
+You may use the validation metric of your choice, e.g. mean absolute percentage error.
 
 ### Goal
 
