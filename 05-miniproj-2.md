@@ -168,8 +168,6 @@ Please do not zip the PDF and source together, as this makes it hard to read on 
 
 ### Alternatives
 
-If you *really* insist on modeling matrix multiplication instead of convolution or attention, I will allow it.  However, matrix multiply is much much simpler, so you need to validate your model for a pretty wide range of matrix multiplication sizes, including very wide and very thin matrices. Follow-up with me if that doesn't make sense.
-
 If you are ambitious enough to want to model an accelerator *other* than the GPU, you can also do that.  
 But ideally you'd have some way to validate how accurate you are ...  maybe see me if you want to go this route.
 
