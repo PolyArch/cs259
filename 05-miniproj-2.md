@@ -84,7 +84,7 @@ Those same parameters might be used to determine what data is stored in scratchp
 * Tera Operations per second (TOps)
 * Achieved Operation Intensity -- i.e. ops / byte -- at each level of the memory hierarchy that you get reuse in. 
  
-**Parameters:**I also urge you to use parameters for your model that have meaning:
+**Parameters:** I also urge you to use parameters for your model that have meaning:
 The model should take as input some hardware specific inputs, including whatever you deem to be important.  E.g.:
 * Bandwidth from memory, l2, l1 cache/scratchpad
 * L1/L2/SPAD Capacities 
